@@ -5,7 +5,7 @@ import TypescriptSvg from './assets/typescript.svg';
 function App() {
     return (
         <div className={styles.App}>
-            <h2>Welcome to your App Component 🎉</h2>
+            <h2>Welcome</h2>
             <span>
                 Double click to edit App component
                 <br />
