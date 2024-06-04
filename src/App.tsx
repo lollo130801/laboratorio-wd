@@ -1,29 +1,27 @@
+import React, { useState } from 'react';
 import styles from './App.module.scss';
-import ViteSvg from './assets/vite.svg';
-import TypescriptSvg from './assets/typescript.svg';
+import ReactDOM from 'react-dom';
 
 function App() {
+    const [showMessage, setShowMessage] = useState(false);
+
+    const handleMouseOver = () => {
+        setShowMessage(true);
+    };
+
+    const handleMouseOut = () => {
+        setShowMessage(false);
+    };
+
     return (
-        <div className={styles.App}>
-            <h2>Welcome Lorenzo</h2>
-            <span>
-                Double click to edit App component
-                <br />
-                &amp; drassssg here elements from + Add<b>Elements</b> Panel
-            </span>
-            <p
-                style={{
-                    fontSize: '12px',
-                    marginTop: '80px',
-                    display: 'flex',
-                    gap: '3px',
-                    justifyContent: 'center',
-                }}
-            >
-                This project is using <img src={ViteSvg} width="12" />+
-                <img src={TypescriptSvg} width="12" />
-                Visit vitejs.dev to learn more.
-            </p>
+        <div className={styles.banana}>
+            <img
+                src="https://wixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                alt="Descrizione dell'immagine"
+                onMouseOver={handleMouseOver}
+                onMouseOut={handleMouseOut}
+            />
+            {showMessage && <div className={styles.MyText}>Ciao mondo!!</div>}
         </div>
     );
 }
