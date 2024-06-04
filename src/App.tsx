@@ -9,7 +9,7 @@ function App() {
             <span>
                 Double click to edit App component
                 <br />
-                &amp; drag here elements from + Add <b>Elements</b> Panel
+                &amp; drassssg here elements from + Add<b>Elements</b> Panel
             </span>
             <p
                 style={{
