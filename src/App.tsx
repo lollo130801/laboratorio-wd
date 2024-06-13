@@ -1,29 +1,17 @@
 import styles from './App.module.scss';
-import ViteSvg from './assets/vite.svg';
-import TypescriptSvg from './assets/typescript.svg';
+import BasePng from './assets/base.png';
+import Mattia1Svg from './assets/mattia 1.svg';
+import Classnames from 'classnames';
 
 function App() {
     return (
         <div className={styles.App}>
-            <h2>Welcome Lorenzo</h2>
-            <span>
-                Double click to edit App component
-                <br />
-                &amp; drassssg here elements from + Add<b>Elements</b> Panel
-            </span>
-            <p
-                style={{
-                    fontSize: '12px',
-                    marginTop: '80px',
-                    display: 'flex',
-                    gap: '3px',
-                    justifyContent: 'center',
-                }}
-            >
-                This project is using <img src={ViteSvg} width="12" />+
-                <img src={TypescriptSvg} width="12" />
-                Visit vitejs.dev to learn more.
-            </p>
+            <img alt="" className={styles.img} width="100%" height="100%" src={BasePng} />
+            <img
+                src={Mattia1Svg}
+                alt=""
+                className={Classnames(styles.icon, styles['slide-left'], styles.active)}
+            />
         </div>
     );
 }
