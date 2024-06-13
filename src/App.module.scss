@@ -10,24 +10,15 @@
  * animation slide-left
  * ----------------------------------------
  */
- @-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-}
+
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(100%);
   }
   100% {
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(-200px);
+    transform: translateX(-15%);
   }
 }
 
@@ -41,6 +32,19 @@
   z-index: initial;
   font-weight: 600;
   position: static;
+  background-repeat: no-repeat;
+  background-image: url(/src/assets/base.png);
+  //background-position: 50%;
+  background-size: 100%;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  background-color: transparent;
+  max-width: 100%;
+  max-height: 100%;
+  @media (max-width: 600px) {
+    background-size: 100%;
+  }
 }
 .img {
   width: 100%;
@@ -53,28 +57,44 @@
   opacity: 1;
 }
 
-
-
-.icon {
-  position: absolute;
-  right: -50px; /* adjust the initial position of the icon */
-  top: 30%; /* adjust the vertical position of the icon */
+.icon_1_right{
+  position: absolute; /* adjust the initial position of the icon */ /* adjust the vertical position of the icon */
   transform: translateY(-50%);
   transition: right 2s ease-in-out; /* adjust the transition duration and timing function as needed */
 
   .icon.active {
-    right: 50%; /* adjust the final position of the icon */
+    left: 40%; /* adjust the final position of the icon */
   }
-  width: 40%;
-  height: 40%;
-
+  width: auto;
+  height: auto;
 
   display: block;
+  max-width: 110%;
+  max-height: 110%;
+  left: 60%;
+  bottom: 90%;
+  top: 0px;
+}
+
+.icon_2_right{
+  position: absolute; /* adjust the initial position of the icon */ /* adjust the vertical position of the icon */
+  transform: translateY(-50%);
+  transition: right 2s ease-in-out; /* adjust the transition duration and timing function as needed */
+
+  .icon.active {
+    left: 40%; /* adjust the final position of the icon */
+  }
+  width: auto;
+  height: auto;
+
+  display: block;
+  max-width: 110%;
+  max-height: 110%;
+  left: 60%;
+  top: 150%;
 }
 
 .slide-left {
-  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
-
