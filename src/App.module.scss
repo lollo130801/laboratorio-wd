@@ -1,9 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Prevents scrollbars from appearing */
+}
+
 .App {
   margin: 0 auto;
   padding: 2.3em 3em 2em;
   text-align: center;
-  display: flex;
+  display: block;
   flex-direction: column;
   border: 2px dashed #888888;
-  border-radius: 30px;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-image: url(assets/base.svg);
+  background-position: center center; /* Center the background image */
+  background-size: cover; /* Make the background image cover the entire viewport */
+  background-attachment: fixed; /* Make the background image fixed in place */
+  background-origin: border-box;
+  background-clip: border-box;
+  background-color: transparent;
+  flex-wrap: nowrap;
+  position: static;
+  overflow: hidden; /* Ensure no overflow issues */
+  width: calc(100% - 4px); /* Adjust width considering the border */
+  height: calc(100% - 4px); /* Adjust height considering the border */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.img1 {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: slideInFromLeft 1s ease-out forwards;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  top: 100px;
 }
