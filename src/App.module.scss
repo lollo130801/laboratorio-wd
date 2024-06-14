@@ -34,9 +34,7 @@
   z-index: initial;
   font-weight: 600;
   position: static;
-  @media (max-width: 800px) {
-    max-width: 120%;
-  }
+  
   /*background-repeat: no-repeat;
   background-image: url(/src/assets/base.png);
   background-position: 50%;
@@ -58,7 +56,9 @@
   max-width: 100%;
   max-height: 100%;
   opacity: 1;
-  
+  @media (max-width: 800px) {
+    width: 120%;
+  }
 }
 
 .icon_1_right {
