@@ -13,9 +13,9 @@ function App() {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add(styles['slide-left']);
+                    entry.target.classList.add(styles['slide-in-right']);
                 } else {
-                    entry.target.classList.remove(styles['slide-left']);
+                    entry.target.classList.remove(styles['slide-in-right']);
                 }
             });
         });
