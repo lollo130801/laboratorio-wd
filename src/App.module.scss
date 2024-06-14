@@ -61,8 +61,6 @@
 
 .icon_1_right {
   position: absolute; /* adjust the initial position of the icon */ /* adjust the vertical position of the icon */
-  transform: translateY(-50%);
-  transition: right 2s ease-in-out; /* adjust the transition duration and timing function as needed */
 
   .icon.active {
     left: 40%; /* adjust the final position of the icon */
@@ -79,8 +77,6 @@
 
 .icon_2_right {
   position: absolute; /* adjust the initial position of the icon */ /* adjust the vertical position of the icon */
-  transform: translateY(-50%);
-  transition: right 2s ease-in-out; /* adjust the transition duration and timing function as needed */
 
   .icon.active {
     left: 40%; /* adjust the final position of the icon */
