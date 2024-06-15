@@ -29,51 +29,34 @@
 
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 100%;
+  width: auto;
+  height: auto;
   z-index: initial;
   font-weight: 600;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
+
 @media screen and (max-width: 600px) {
   body {
     overflow-x: auto; /* Enable horizontal scrolling */
   }
 
-  .App {
-    width: 180vw; /* Make the app's width twice the viewport width */
+  .App{
+    width: 250vw !important; /* Make the app's width twice the viewport width */
+    height: 700vh !important;
   }
 
-  .icon_1_right{
-    top: -1% !important;
+  .icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right,.text_1_right , .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right {
+    width: 84vw !important; /* Make the icons half the viewport width */
   }
-
-  .icon_1_right, .icon_2_right, icon_3_right, icon_4_right, icon_5_right, icon_6_right, icon_7_right {
-    width: 110vw !important; /* Make the icons half the viewport width */
-    left: 78vw !important; /* Position the icons on the right side */  
-  }
-  .text_1_right , .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right{
-    width: 86vw !important; /* Make the icons half the viewport width */
-    left: 91vw !important; /* Position the icons on the right side */  
-  }
-
-  .icon_2_right{
-    top: 13% !important;
-  }
-
-  .text_1_right{
-    margin-top: calc(10% + 35%) !important;
-  }
-
-  .text_2_right{
-    margin-top: calc(90% + 80%) !important;
-  }
-
 
 }
+
+
 @media screen and (min-width: 601px)and (max-width: 1100px) {
   body {
     overflow-x: auto; /* Enable horizontal scrolling */
@@ -81,74 +64,139 @@
 
   .App {
     width: 140vw; /* Make the app's width twice the viewport width */
+    height: 700vh !important;
+
   }
 
-  .icon_1_right{
-    top: -1% !important;
-  }
-
-  .icon_1_right, .icon_2_right, .text_1_right , .text_2_right ,icon_3_right, icon_4_right, icon_5_right, icon_6_right, icon_7_right {
-    width: 81vw !important; /* Make the icons half the viewport width */
-    left: 65vw !important; /* Position the icons on the right side */  
-  }
-  .text_1_right , .text_2_right {
+  .icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right,.text_1_right , .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right {
     width: 65vw !important; /* Make the icons half the viewport width */
-    left: 73vw !important; /* Position the icons on the right side */  
   }
 
-  .text_1_right{
-    margin-top: calc(10% + 33%) !important;
-  }
-
-  .text_2_right{
-    margin-top: calc(70% + 65%) !important;
-  }
 
 }
 .img {
   width: 100%;
-  height: 100%;
+  height:700vh;
   position: absolute;
   z-index: initial;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   opacity: 1;
 }
 
-.icon_1_right, .icon_2_right, icon_3_right, icon_4_right, icon_5_right, icon_6_right, icon_7_right{
-  position: absolute; /* adjust the initial position of the icon */ /* adjust the vertical position of the icon */
+.icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right,.text_1_right , .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right {
   z-index: 1;
-  display: block;
+  width: 45vw;
+  margin-right: 1%;
+}
+
+.icon_1_right {
+  order: 1;
+  margin-top: -5%;
+  margin-bottom: -5%; /* Decrease this value to reduce space on the right side of the icon */
+
+}
+
+.text_1_right {
+  order: 2;
+  margin-bottom: 5%; /* Decrease this value to reduce space on the right side of the icon */
+}
+
+.icon_2_right {
+  order: 3;
+  margin-bottom: -5%;
+}
+
+.text_2_right {
+  order: 4;
+  margin-bottom: 5%;
+}
+
+.icon_3_right {
+  order: 5;
+  margin-bottom: -8%;
+}
+
+.text_3_right {
+  order: 6;
+  margin-bottom: 5%;
+}
+
+.icon_4_right {
+  order: 7;
+  margin-bottom: -8%; 
+}
+
+.text_4_right {
+  order: 8;
+  margin-bottom: 5%; 
+}
+.icon_5_right {
+  order: 9;
+  margin-bottom: -5%; 
+}
+.text_5_right {
+  order: 10;
+  margin-bottom: 5%; 
+}
+.icon_6_right {
+  order: 11;
+  margin-bottom: -5%; 
+}
+.text_6_right {
+  order: 12;
+  margin-bottom: 5%; 
+}
+.icon_7_right {
+  order: 13;
+  margin-bottom: -10%; 
+}
+.text_7_right {
+  order: 14;
+
+}
+/*
+.icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right{
+  position: absolute; 
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   width: 50vw;
+  height: 100%;
   left: 50vw;
-  
+  justify-content: space-between;
+
 }
 
 .text_1_right, .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right{
-  position: absolute; /* adjust the initial position of the icon */ /* adjust the vertical position of the icon */
+  position: absolute; 
   z-index: 1;
-  display: block;
   width: 40vw;
-  left: 55vw;
+  height: 100%;
+  left: 5vw;
+  flex-direction: column;
+  align-items: flex-end;
+    justify-content: space-between;
 }
+*/
 
-.icon_1_right{
-  top: -2%;
-}
-
-.text_1_right{
-  margin-top: calc(10% + 25%);
-}
-
-.text_2_right{
-  margin-top: calc(10% + 70%);
+/*.icon_1_right{
+  margin-top: 0%;
 }
 
 .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right{
-  top: calc(10% + 5%);
+  top: 15%;
 }
+
+.text_1_right{
+  top: 12%;
+}
+
+.text_2_right{
+  top: 27.5%;
+}*/
+
 
 
 .slide-in-right {

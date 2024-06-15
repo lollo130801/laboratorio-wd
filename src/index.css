@@ -19,12 +19,16 @@ a:hover {
 }
 
 body {
+  /*
   margin: 0;
   display: flex;
   place-items: center;
   justify-content: center;
-  width: 100vw;
-  min-height: 100vh;
+  */
+  margin: 0;
+  background-size: cover;
+  overflow-x: hidden;
+  height: auto;
   
 }
 
