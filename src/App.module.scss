@@ -11,118 +11,195 @@
  * ----------------------------------------
  */
 
- @keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+@keyframes slide-in-right {
+  /*0% {
+    
+    -webkit-transform: translateX(90%);
+    transform: translateX(90%);
     opacity: 0;
+    
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
     opacity: 1;
-  }
+  }*/
 }
 
 .App {
   text-align: center;
-  display: block;
-  flex-direction: row;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   z-index: initial;
   font-weight: 600;
-  position: static;
-  @media (max-width: 500px) {
-    max-width: 150%;
-  }
-  /*background-repeat: no-repeat;
-  background-image: url(/src/assets/base.png);
-  background-position: 50%;
-  background-size: 100%;
-  background-attachment: scroll;
-  background-origin: padding-box;
-  background-clip: border-box;
-  background-color: transparent;
-  max-width: 100%;
-  max-height: 100%;*/
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
+
+@media screen and (max-width: 1200px) {
+  body {
+    overflow-x: auto !important; /* Enable horizontal scrolling */
+  }
+
+  .App{
+    width: 180vw !important; /* Make the app's width twice the viewport width */
+    height: 700vh !important;
+  }
+
+  .icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right,.text_1_right , .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right {
+    width: 84vw !important; /* Make the icons half the viewport width */
+  }
+
+}
+
+/*
+@media screen and (min-width: 601px)and (max-width: 1100px) {
+  body {
+    overflow-x: auto; 
+  }
+
+  .App {
+    width: 160vw; 
+    height: 700vh !important;
+
+  }
+
+  .icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right,.text_1_right , .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right {
+    width: 65vw !important; 
+  }
+}
+*/
 
 .img {
   width: 100%;
-  height: 100%;
-  position: relative;
+  height:700vh;
+  position: absolute;
   z-index: initial;
-  overflow: hidden;
-  max-width: 100%;
-  max-height: 100%;
+  top: 0;
+  left: 0;
   opacity: 1;
-  
+}
+
+.icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right,.text_1_right , .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right {
+  z-index: 1;
+  width: 45vw;
+  margin-right: 1%;
 }
 
 .icon_1_right {
-  position: absolute; /* adjust the initial position of the icon */ /* adjust the vertical position of the icon */
+  order: 1;
+  margin-top: -5%;
+  margin-bottom: -5%; /* Decrease this value to reduce space on the right side of the icon */
 
-  .icon.active {
-    left: 20%; /* adjust the final position of the icon */
-  }
-  width: auto;
-  height: auto;
+}
 
-  display: block;
-  max-width: 110%;
-  max-height: 110%;
-  left: 60%;
-  top: 10%;
+.text_1_right {
+  order: 2;
+  margin-bottom: 5%; /* Decrease this value to reduce space on the right side of the icon */
 }
 
 .icon_2_right {
-  position: absolute; /* adjust the initial position of the icon */ /* adjust the vertical position of the icon */
-
-  .icon.active {
-    left: 40%; /* adjust the final position of the icon */
-  }
-  width: auto;
-  height: auto;
-
-  display: block;
-  max-width: 110%;
-  max-height: 110%;
-  left: 60%;
-  top: 80%;
+  order: 3;
+  margin-bottom: -5%;
 }
+
+.text_2_right {
+  order: 4;
+  margin-bottom: 5%;
+}
+
+.icon_3_right {
+  order: 5;
+  margin-bottom: -8%;
+}
+
+.text_3_right {
+  order: 6;
+  margin-bottom: 5%;
+}
+
+.icon_4_right {
+  order: 7;
+  margin-bottom: -8%; 
+}
+
+.text_4_right {
+  order: 8;
+  margin-bottom: 5%; 
+}
+.icon_5_right {
+  order: 9;
+  margin-bottom: -5%; 
+}
+.text_5_right {
+  order: 10;
+  margin-bottom: 5%; 
+}
+.icon_6_right {
+  order: 11;
+  margin-bottom: -5%; 
+}
+.text_6_right {
+  order: 12;
+  margin-bottom: 5%; 
+}
+.icon_7_right {
+  order: 13;
+  margin-bottom: -10%; 
+}
+.text_7_right {
+  order: 14;
+
+}
+/*
+.icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right{
+  position: absolute; 
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50vw;
+  height: 100%;
+  left: 50vw;
+  justify-content: space-between;
+
+}
+
+.text_1_right, .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right{
+  position: absolute; 
+  z-index: 1;
+  width: 40vw;
+  height: 100%;
+  left: 5vw;
+  flex-direction: column;
+  align-items: flex-end;
+    justify-content: space-between;
+}
+*/
+
+/*.icon_1_right{
+  margin-top: 0%;
+}
+
+.icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right{
+  top: 15%;
+}
+
+.text_1_right{
+  top: 12%;
+}
+
+.text_2_right{
+  top: 27.5%;
+}*/
+
+
 
 .slide-in-right {
-	-webkit-animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-//__________________________________
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.img1 {
-  width: 50%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: slideInFromLeft 1s ease-out forwards;
-
-  &:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
-  top: 100px;
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
