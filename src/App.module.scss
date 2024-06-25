@@ -15,15 +15,33 @@
 .bg_1 {
   height: 1500vh;
   width: 100%;
-  background-size: cover;
-  z-index: initial;
+  position: relative;
 }
 
 .bg_2 {
+  height: 1500vh;
+  width: 100%;
+  position: relative;
+}
+
+.bg_3 {
+  height: 1500vh;
+  width: 100%;
+  position: relative;
+}
+
+.bg_4 {
+  height: 1500vh;
+  width: 100%;
+  position: relative;
+}
+
+.bg_5 {
   height: 650vh;
   width: 100%;
-  
+  position: relative;
 }
+
 
 
 .App {
@@ -111,14 +129,14 @@
 .text_5_right,
 .text_6_right,
 .text_7_right {
-  z-index: 1;
   width: 45vw;
   margin-right: 1%;
+  position: absolute;
 }
 
 .icon_1_right {
   order: 1;
-  margin-top: -5%;
+  margin-top: 50%;
   margin-bottom: -5%; /* Decrease this value to reduce space on the right side of the icon */
 }
 
