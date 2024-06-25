@@ -47,7 +47,7 @@
 .App {
   text-align: center;
   width: auto;
-  height: 3420vw;
+  height: auto;
   z-index: initial;
   font-weight: 600;
   position: relative;
@@ -108,7 +108,7 @@
 
 .icon_1_right {
   order: 1;
-  margin-top: 50%;
+  margin-top: -5%;
   margin-bottom: -5%; /* Decrease this value to reduce space on the right side of the icon */
 }
 
