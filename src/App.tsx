@@ -8,11 +8,11 @@ import Mattia4Svg0 from './assets/mattia_4.svg';
 import Mattia5Svg0 from './assets/mattia_5.svg';
 import Mattia6Svg0 from './assets/mattia_6.svg';
 import Mattia7Svg0 from './assets/mattia_7.svg';
-import bg1 from './assets/1-min.png';
-import bg2 from './assets/2-min.png';
-import bg3 from './assets/3-min.png';
-import bg4 from './assets/4-min.png';
-import bg5 from './assets/5-min.png';
+import bg1 from './assets/1.png';
+import bg2 from './assets/2.png';
+import bg3 from './assets/3.png';
+import bg4 from './assets/4.png';
+import bg5 from './assets/5.png';
 
 function App() {
     //Per ogni icona e testo creo un riferimento
