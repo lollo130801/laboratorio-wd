@@ -102,10 +102,10 @@ function App() {
 
 
             <img src={bg1} alt="" className={styles.bg_1} />
-            <img src={bg2} alt="" className={styles.bg_2} />
-            <img src={bg3} alt="" className={styles.bg_3} />
-            <img src={bg4} alt="" className={styles.bg_4} />
-            <img src={bg5} alt="" className={styles.bg_5} />
+            <img src={bg2} alt="" className={styles.bg_1} />
+            <img src={bg3} alt="" className={styles.bg_1} />
+            <img src={bg4} alt="" className={styles.bg_1} />
+            <img src={bg5} alt="" className={styles.bg_2} />
 
             <img ref={icon1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_right} />
             <div
