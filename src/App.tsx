@@ -8,11 +8,20 @@ import Mattia4Svg0 from './assets/mattia_4.svg';
 import Mattia5Svg0 from './assets/mattia_5.svg';
 import Mattia6Svg0 from './assets/mattia_6.svg';
 import Mattia7Svg0 from './assets/mattia_7.svg';
-import bg1 from './assets/1.png';
-import bg2 from './assets/2.png';
-import bg3 from './assets/3.png';
-import bg4 from './assets/4.png';
-import bg5 from './assets/5.png';
+import Mattia8Svg0 from './assets/mattia_8.svg';
+import Mattia9Svg0 from './assets/mattia_9.svg';
+import Mattia10Svg0 from './assets/mattia_10.svg';
+import Mattia11Svg0 from './assets/mattia_11.svg';
+import Mattia12Svg0 from './assets/mattia_12.svg';
+import Mattia13Svg0 from './assets/mattia_13.svg';
+import Mattia14Svg0 from './assets/mattia_14.svg';
+import Mattia15Svg0 from './assets/mattia_15.svg';
+import Mattia16Svg0 from './assets/mattia_16.svg';
+import bg1 from './assets/bg_1.png';
+import bg2 from './assets/bg_2.png';
+import bg3 from './assets/bg_3.png';
+import bg4 from './assets/bg_4.png';
+import bg5 from './assets/bg_5.png';
 
 function App() {
     //Per ogni icona e testo creo un riferimento
@@ -107,23 +116,20 @@ function App() {
             <img src={bg4} alt="" className={styles.bg_1} />
             <img src={bg5} alt="" className={styles.bg_2} />
 
-            <img ref={icon1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_right} />
-    
-
-            <img ref={icon2Ref} src={Mattia2Svg0} alt="" className={styles.icon_2_right} />
-
-            <img ref={icon3Ref} src={Mattia3Svg0} alt="" className={styles.icon_3_right} />
-
-
-            <img ref={icon4Ref} src={Mattia4Svg0} alt="" className={styles.icon_4_right} />
-
-            <img ref={icon5Ref} src={Mattia5Svg0} alt="" className={styles.icon_5_right} />
             
+                <img ref={icon1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_right} />
 
-            <img ref={icon6Ref} src={Mattia6Svg0} alt="" className={styles.icon_6_right} />
-            
+                <img ref={icon2Ref} src={Mattia2Svg0} alt="" className={styles.icon_2_right} />
 
-            <img ref={icon7Ref} src={Mattia7Svg0} alt="" className={styles.icon_7_right} />
+                <img ref={icon3Ref} src={Mattia3Svg0} alt="" className={styles.icon_3_right} />
+
+                <img ref={icon4Ref} src={Mattia4Svg0} alt="" className={styles.icon_4_right} />
+
+                <img ref={icon5Ref} src={Mattia5Svg0} alt="" className={styles.icon_5_right} />
+                
+                <img ref={icon6Ref} src={Mattia6Svg0} alt="" className={styles.icon_6_right} />
+
+                <img ref={icon7Ref} src={Mattia7Svg0} alt="" className={styles.icon_7_right} />
             
 
 
