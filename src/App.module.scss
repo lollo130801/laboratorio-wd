@@ -1,3 +1,5 @@
+
+/*CLASSI SFONDI*/
 .bg_1 {
   height: 1500vh;
   width: 100%;
@@ -12,6 +14,8 @@
   z-index: 1;
 }
 
+
+/*CLASSI IMMAGINI HEADER*/
 .titolo{
   position: absolute;
   height: 35vh;
@@ -19,8 +23,6 @@
   right: 50vh;
   z-index: 3;
 }
-
-
 
 .nuvoleTitolo{
   position: absolute;
@@ -30,7 +32,7 @@
   z-index: 2;
 }
 
-
+/*CLASSI POPUP NUVOLE MATTIA / AHMED*/
 .nuvolaAhmed{
   position: absolute;
   height: 15vh;
@@ -71,6 +73,8 @@
 
 }
 
+
+/*CLASSI PER MOBILE 1200PX*/
 @media screen and (max-width: 1200px) {
 
 
@@ -106,9 +110,6 @@
     order:2;
     z-index: 2;
   }
-
-
-
   body {
     overflow-x: auto !important; /* Enable horizontal scrolling */
   }
@@ -227,6 +228,11 @@
 }
 
 
+
+
+
+/* CLASSI ANIMAZIONI */
+
 .AnimazioneTitolo {
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -262,12 +268,10 @@
   }
 }
 
-
 .AnimazioneNuvole {
   -webkit-animation: scale-in-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
 
 .scale-in-top {
   -webkit-animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -345,8 +349,6 @@
     opacity: 0;
   }
 }
-
-
 
 .Nuvola-in-right-Animazione{-webkit-animation:bounce-in-right 1.1s both;animation:bounce-in-right 1.1s both}
 /* ----------------------------------------------

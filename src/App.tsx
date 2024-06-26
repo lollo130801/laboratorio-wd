@@ -101,9 +101,8 @@ function App() {
     useEffect(() => {
         const handleScroll = () => {
 
-
+            // Controllo Animazione Nuvole Ahmed e Mattia
             if (nuvolaAhmedRef.current) {
-
                 var iconPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
                 var windowHeight = window.innerHeight;
                 if (iconPosition < windowHeight) {
@@ -113,10 +112,8 @@ function App() {
                 if (nuvolaAhmedPosition < 0) {
                     nuvolaAhmedRef.current.style.position = 'fixed';
                     nuvolaAhmedRef.current.style.top = '0vh';
-                }
-                
+                }   
             }
-
             if (nuvolaMattiaRef.current) {
                 var iconPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
                 var windowHeight = window.innerHeight;
@@ -129,10 +126,6 @@ function App() {
                     nuvolaMattiaRef.current.style.top = `0vh`;
                 }
             }
-
-
-
-
 
             // Creo un array con tutti i riferimenti
             const icons = [icon1Ref, icon2Ref, icon3Ref, icon4Ref, icon5Ref, icon6Ref, icon7Ref];
@@ -153,7 +146,7 @@ function App() {
                 text7RefPopup,
             ];
 
-            // Controllo se l'elemento è visibile
+            // Controllo Animazione Icone Destra
             icons.forEach((iconRef) => {
                 if (iconRef.current) {
                     var iconPosition = iconRef.current.getBoundingClientRect().top;
@@ -169,6 +162,7 @@ function App() {
                 }
             });
 
+            // Controllo Animazione Testo
             text.forEach((textRef) => {
                 if (textRef.current) {
                     var textPosition = textRef.current.getBoundingClientRect().top;
