@@ -73,48 +73,41 @@ import nuvolaAhmed from './assets/nuvolaAhmed.svg';
 
 function App() {
     //Per ogni icona e testo creo un riferimento
-    const icon1Ref = useRef<HTMLImageElement>(null);
-    const icon2Ref = useRef<HTMLImageElement>(null);
-    const icon3Ref = useRef<HTMLImageElement>(null);
-    const icon4Ref = useRef<HTMLImageElement>(null);
-    const icon5Ref = useRef<HTMLImageElement>(null);
-    const icon6Ref = useRef<HTMLImageElement>(null);
-    const icon7Ref = useRef<HTMLImageElement>(null);
-    const text1Ref = useRef<HTMLDivElement>(null);
-    const text2Ref = useRef<HTMLDivElement>(null);
-    const text3Ref = useRef<HTMLDivElement>(null);
-    const text4Ref = useRef<HTMLDivElement>(null);
-    const text5Ref = useRef<HTMLDivElement>(null);
-    const text6Ref = useRef<HTMLDivElement>(null);
-    const text7Ref = useRef<HTMLDivElement>(null);
-    const text1RefPopup = useRef<HTMLDivElement>(null);
-    const text2RefPopup = useRef<HTMLDivElement>(null);
-    const text3RefPopup = useRef<HTMLDivElement>(null);
-    const text4RefPopup = useRef<HTMLDivElement>(null);
-    const text5RefPopup = useRef<HTMLDivElement>(null);
-    const text6RefPopup = useRef<HTMLDivElement>(null);
-    const text7RefPopup = useRef<HTMLDivElement>(null);
+    const Ahmed1Ref = useRef<HTMLImageElement>(null);
+    const Ahmed2Ref = useRef<HTMLImageElement>(null);
+    const Ahmed3Ref = useRef<HTMLImageElement>(null);
+    const Ahmed4Ref = useRef<HTMLImageElement>(null);
+    const Ahmed5Ref = useRef<HTMLImageElement>(null);
+    const Ahmed6Ref = useRef<HTMLImageElement>(null);
+    const Ahmed7Ref = useRef<HTMLImageElement>(null);
+    const Ahmed8Ref = useRef<HTMLImageElement>(null);
+    const Ahmed9Ref = useRef<HTMLImageElement>(null);
+    const Ahmed10Ref = useRef<HTMLImageElement>(null);
+    const Ahmed11Ref = useRef<HTMLImageElement>(null);
+    const Ahmed12Ref = useRef<HTMLImageElement>(null);
+    const Ahmed13Ref = useRef<HTMLImageElement>(null);
+    const Ahmed14Ref = useRef<HTMLImageElement>(null);
+
+    const AhmedText1Ref = useRef<HTMLImageElement>(null);
+    const AhmedText2Ref = useRef<HTMLImageElement>(null);
+    const AhmedText3Ref = useRef<HTMLImageElement>(null);
+    const AhmedText4Ref = useRef<HTMLImageElement>(null);
+    const AhmedText5Ref = useRef<HTMLImageElement>(null);
+    const AhmedText6Ref = useRef<HTMLImageElement>(null);
+    const AhmedText7Ref = useRef<HTMLImageElement>(null);
+    const AhmedText8Ref = useRef<HTMLImageElement>(null);
+    const AhmedText9Ref = useRef<HTMLImageElement>(null);
+    const AhmedText10Ref = useRef<HTMLImageElement>(null);
+    const AhmedText11Ref = useRef<HTMLImageElement>(null);
+    const AhmedText12Ref = useRef<HTMLImageElement>(null);
+    const AhmedText13Ref = useRef<HTMLImageElement>(null);
+    const AhmedText14Ref = useRef<HTMLImageElement>(null);
 
     // Add scroll event listener
     useEffect(() => {
         const handleScroll = () => {
-            const icons = [icon1Ref, icon2Ref, icon3Ref, icon4Ref, icon5Ref, icon6Ref, icon7Ref];
-            const text = [
-                text1Ref,
-                text2Ref,
-                text3Ref,
-                text4Ref,
-                text5Ref,
-                text6Ref,
-                text7Ref,
-                text1RefPopup,
-                text2RefPopup,
-                text3RefPopup,
-                text4RefPopup,
-                text5RefPopup,
-                text6RefPopup,
-                text7RefPopup,
-            ];
+            const icons = [Ahmed1Ref, Ahmed2Ref, Ahmed3Ref, Ahmed4Ref, Ahmed5Ref, Ahmed6Ref, Ahmed7Ref, Ahmed8Ref, Ahmed9Ref, Ahmed10Ref, Ahmed11Ref, Ahmed12Ref, Ahmed13Ref, Ahmed14Ref];
+            const text = [AhmedText1Ref, AhmedText2Ref, AhmedText3Ref, AhmedText4Ref, AhmedText5Ref, AhmedText6Ref, AhmedText7Ref, AhmedText8Ref, AhmedText9Ref, AhmedText10Ref, AhmedText11Ref, AhmedText12Ref, AhmedText13Ref, AhmedText14Ref];
 
             // Controllo se l'elemento è visibile
             icons.forEach((iconRef) => {
@@ -155,47 +148,44 @@ function App() {
 
     return (
         <div className={styles.App}>
-
-
-
             <img src={bg1} alt="" className={styles.bg_1} />
             <img src={bg2} alt="" className={styles.bg_1} />
             <img src={bg3} alt="" className={styles.bg_1} />
             <img src={bg4} alt="" className={styles.bg_1} />
             <img src={bg5} alt="" className={styles.bg_2} />
 
+            <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)}/>
+            <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)}/>
             
-                <img ref={icon1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_right} />
-
-                <img ref={icon2Ref} src={Mattia2Svg0} alt="" className={styles.icon_2_right} />
-
-                <img ref={icon3Ref} src={Mattia3Svg0} alt="" className={styles.icon_3_right} />
-
-                <img ref={icon4Ref} src={Mattia4Svg0} alt="" className={styles.icon_4_right} />
-
-                <img ref={icon5Ref} src={Mattia5Svg0} alt="" className={styles.icon_5_right} />
-                
-                <img ref={icon6Ref} src={Mattia6Svg0} alt="" className={styles.icon_6_right} />
-
-                <img ref={icon7Ref} src={Mattia7Svg0} alt="" className={styles.icon_7_right} />
+            <img ref={Ahmed1Ref} src={Ahmed1Svg0} alt="" className={styles.icon_1_right} />
+            <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="" className={styles.icon_2_right} />
+            <img ref={Ahmed3Ref} src={Ahmed3Svg0} alt="" className={styles.icon_3_right} />
+            <img ref={Ahmed4Ref} src={Ahmed4Svg0} alt="" className={styles.icon_4_right} />
+            <img ref={Ahmed5Ref} src={Ahmed5Svg0} alt="" className={styles.icon_5_right} />
+            <img ref={Ahmed6Ref} src={Ahmed6Svg0} alt="" className={styles.icon_6_right} />
+            <img ref={Ahmed7Ref} src={Ahmed7Svg0} alt="" className={styles.icon_7_right} />
+            <img ref={Ahmed8Ref} src={Ahmed8Svg0} alt="" className={styles.icon_8_right} />
+            <img ref={Ahmed9Ref} src={Ahmed9Svg0} alt="" className={styles.icon_9_right} />
+            <img ref={Ahmed10Ref} src={Ahmed10Svg0} alt="" className={styles.icon_10_right} />
+            <img ref={Ahmed11Ref} src={Ahmed11Svg0} alt="" className={styles.icon_11_right} />
+            <img ref={Ahmed12Ref} src={Ahmed12Svg0} alt="" className={styles.icon_12_right} />
+            <img ref={Ahmed13Ref} src={Ahmed13Svg0} alt="" className={styles.icon_13_right} />
+            <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
             
-                <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)}/>
-                <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)}/>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <img ref={AhmedText1Ref} src={txtAhmed1Svg} alt="" className={styles.text_1_right} />
+            <img ref={AhmedText2Ref} src={txtAhmed2Svg} alt="" className={styles.text_2_right} />
+            <img ref={AhmedText3Ref} src={txtAhmed3Svg} alt="" className={styles.text_3_right} />
+            <img ref={AhmedText4Ref} src={txtAhmed4Svg} alt="" className={styles.text_4_right} />
+            <img ref={AhmedText5Ref} src={txtAhmed5Svg} alt="" className={styles.text_5_right} />
+            <img ref={AhmedText6Ref} src={txtAhmed6Svg} alt="" className={styles.text_6_right} />
+            <img ref={AhmedText7Ref} src={txtAhmed7Svg} alt="" className={styles.text_7_right} />
+            <img ref={AhmedText8Ref} src={txtAhmed8Svg} alt="" className={styles.text_8_right} />
+            <img ref={AhmedText9Ref} src={txtAhmed9Svg} alt="" className={styles.text_9_right} />
+            <img ref={AhmedText10Ref} src={txtAhmed10Svg} alt="" className={styles.text_10_right} />
+            <img ref={AhmedText11Ref} src={txtAhmed11Svg} alt="" className={styles.text_11_right} />
+            <img ref={AhmedText12Ref} src={txtAhmed12Svg} alt="" className={styles.text_12_right} />
+            <img ref={AhmedText13Ref} src={txtAhmed13Svg} alt="" className={styles.text_13_right} />
+            <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
         </div>
     );
 }
