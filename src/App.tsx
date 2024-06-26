@@ -22,6 +22,8 @@ import bg2 from './assets/bg_2.png';
 import bg3 from './assets/bg_3.png';
 import bg4 from './assets/bg_4.png';
 import bg5 from './assets/bg_5.png';
+import nuvoleTitolo from './assets/Icone Titolo/nuvole TITOLO.svg';
+import titolo from './assets/Icone Titolo/TITOLO.svg';
 
 function App() {
     //Per ogni icona e testo creo un riferimento
@@ -131,6 +133,8 @@ function App() {
 
                 <img ref={icon7Ref} src={Mattia7Svg0} alt="" className={styles.icon_7_right} />
             
+                <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)}/>
+                <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)}/>
 
 
 
