@@ -102,6 +102,8 @@ function App() {
     const AhmedText12Ref = useRef<HTMLImageElement>(null);
     const AhmedText13Ref = useRef<HTMLImageElement>(null);
     const AhmedText14Ref = useRef<HTMLImageElement>(null);
+    const nuvolaAhmedRef = useRef<HTMLImageElement>(null);
+    const nuvolaMattiaRef = useRef<HTMLImageElement>(null);
 
     // Add scroll event listener
     useEffect(() => {
@@ -109,7 +111,34 @@ function App() {
             const icons = [Ahmed1Ref, Ahmed2Ref, Ahmed3Ref, Ahmed4Ref, Ahmed5Ref, Ahmed6Ref, Ahmed7Ref, Ahmed8Ref, Ahmed9Ref, Ahmed10Ref, Ahmed11Ref, Ahmed12Ref, Ahmed13Ref, Ahmed14Ref];
             const text = [AhmedText1Ref, AhmedText2Ref, AhmedText3Ref, AhmedText4Ref, AhmedText5Ref, AhmedText6Ref, AhmedText7Ref, AhmedText8Ref, AhmedText9Ref, AhmedText10Ref, AhmedText11Ref, AhmedText12Ref, AhmedText13Ref, AhmedText14Ref];
 
-            // Controllo se l'elemento è visibile
+            // Controllo Animazione Nuvole Ahmed e Mattia
+            if (nuvolaAhmedRef.current) {
+                var iconPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (iconPosition < windowHeight) {
+                    nuvolaAhmedRef.current.classList.add(styles['Nuvola-in-right-Animazione']);
+                }
+                const nuvolaAhmedPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
+                if (nuvolaAhmedPosition < 0) {
+                    nuvolaAhmedRef.current.style.position = 'fixed';
+                    nuvolaAhmedRef.current.style.top = '0vh';
+                }   
+            }
+            if (nuvolaMattiaRef.current) {
+                var iconPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (iconPosition < windowHeight) {
+                    nuvolaMattiaRef.current.classList.add(styles['Nuvola-in-left-Animazione']);
+                }
+                const nuvolaMattiaPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
+                if (nuvolaMattiaPosition < 0) {
+                    nuvolaMattiaRef.current.style.position = 'fixed';
+                    nuvolaMattiaRef.current.style.top = `0vh`;
+                }
+            }
+
+
+            // Controllo Animazione Icone Destra
             icons.forEach((iconRef) => {
                 if (iconRef.current) {
                     var iconPosition = iconRef.current.getBoundingClientRect().top;
@@ -125,6 +154,7 @@ function App() {
                 }
             });
 
+            // Controllo Animazione Testo
             text.forEach((textRef) => {
                 if (textRef.current) {
                     var textPosition = textRef.current.getBoundingClientRect().top;
@@ -136,6 +166,7 @@ function App() {
                     }
                 }
             });
+
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -148,14 +179,22 @@ function App() {
 
     return (
         <div className={styles.App}>
+
+            
+
             <img src={bg1} alt="" className={styles.bg_1} />
             <img src={bg2} alt="" className={styles.bg_1} />
             <img src={bg3} alt="" className={styles.bg_1} />
             <img src={bg4} alt="" className={styles.bg_1} />
             <img src={bg5} alt="" className={styles.bg_2} />
 
-            <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)}/>
-            <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)}/>
+
+
+
+            <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)} />
+            <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)} />
+            <img ref={nuvolaAhmedRef} src={nuvolaAhmed} alt="Nuvola Ahmed" className={styles.nuvolaAhmed} />
+            <img ref={nuvolaMattiaRef} src={nuvolaMattia} alt="Nuvola Mattia" className={styles.nuvolaMattia} />
             
             <img ref={Ahmed1Ref} src={Ahmed1Svg0} alt="" className={styles.icon_1_right} />
             <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="" className={styles.icon_2_right} />
@@ -186,6 +225,19 @@ function App() {
             <img ref={AhmedText12Ref} src={txtAhmed12Svg} alt="" className={styles.text_12_right} />
             <img ref={AhmedText13Ref} src={txtAhmed13Svg} alt="" className={styles.text_13_right} />
             <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     );
 }
