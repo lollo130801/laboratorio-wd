@@ -39,7 +39,7 @@
   top: 220vh;
   right: -5vh;
   order:2;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nuvolaMattia{
@@ -48,7 +48,7 @@
   top: 220vh;
   left: -5vh;
   order:2;
-  z-index: 2;
+  z-index: 3;
 }
 
 .App {
@@ -129,7 +129,7 @@
   .text_4_right,
   .text_5_right,
   .text_6_right,
-  .text_7_right
+  .text_7_right,
   .text_8_right,
   .text_9_right,
   .text_10_right,
@@ -173,6 +173,7 @@
   width: 45vw;
   margin-right: 1%;
   position: absolute;
+  z-index: 2;
 }
 
 .icon_1_right{
