@@ -2,12 +2,14 @@
   height: 1500vh;
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 
 .bg_2 {
   height: 650vh;
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 
 .titolo{
@@ -28,17 +30,16 @@
   text-align: center;
   width: auto;
   height: auto;
-  z-index: initial;
+  z-index: 0;
   font-weight: 600;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+
 }
 
-.right_container{
-  order: 1;
+.left_container{
   position: relative;
   justify-content: center;
   width: 100%;
@@ -93,6 +94,105 @@
     width: 84vw !important; /* Make the icons half the viewport width */
   }
 }
+
+
+.icon_1_left, .icon_2_left, .icon_3_left, .icon_4_left, .icon_5_left, .icon_6_left, .icon_7_left, .icon_8_left,
+.icon_9_left, .icon_10_left, .icon_11_left, .icon_12_left, .icon_13_left, .icon_14_left, .icon_15_left, .icon_16_left,
+.text_1_left, .text_2_left, .text_3_left, .text_4_left, .text_5_left, .text_6_left, .text_7_left, .text_8_left,
+.text_9_left, .text_10_left, .text_11_left, .text_12_left, .text_13_left, .text_14_left, .text_15_left, .text_16_left{
+  width: 38vw;
+  left:6vw;
+  z-index: 2;
+  position: absolute;
+}
+
+.icon_1_left {
+  top:260vh;
+}
+.text_1_left {
+  top: 315vh;
+  width: 30vw;
+  left: 11vw;
+}
+
+.icon_2_left {
+  top:452vh;
+}
+
+.text_2_left {
+  top: 520vh;
+  width: 30vw;
+  left: 10vw;
+}
+
+.icon_3_left {
+  top: 1044vh;
+  width: 39vw;
+  left: 5vw;
+}
+
+.text_3_left {
+  top: 1082vh;
+  width: 32vw;
+  left: 9vw;
+}
+
+.icon_4_left {
+  top: 1545vh;
+  width: 35vw;
+}
+
+.text_4_left {
+  top: 1595vh;
+  width: 30vw;
+  left: 9vw;
+
+}
+.icon_5_left {
+  top: 1730vh;
+  width: 35vw;
+  left: 7vw;
+}
+.text_5_left {
+  top: 1810vh;
+  width: 30vw;
+  left:10vw;
+
+}
+.icon_6_left {
+  top: 1965vh;
+  width: 37vw;
+  left: 8vw;
+}
+.text_6_left {
+  top: 2025vh;
+  width: 30vw;
+  left:10vw;
+}
+.icon_7_left {
+  top: 2190vh;
+  width: 39vw;
+  left:9vw;
+
+}
+.text_7_left {
+  top:2245vh;
+  width: 30vw;
+  left: 13vw;
+}
+
+.icon_8_left {
+  top: 2422vh;
+  left:7vw;
+}
+
+.text_8_left {
+  top: 2483vh;
+  width: 30vw;
+  left: 11vw;
+}
+
+
 
 .icon_1_right,
 .icon_2_right,
@@ -185,6 +285,7 @@
 }
 
 
+
 .AnimazioneTitolo {
   -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -219,6 +320,37 @@
     opacity: 1;
   }
 }
+
+.slide-in-left {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 
 .AnimazioneNuvole {
