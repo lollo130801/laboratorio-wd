@@ -103,14 +103,26 @@ function App() {
 
 
             if (nuvolaAhmedRef.current) {
+
+                var iconPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (iconPosition < windowHeight) {
+                    nuvolaAhmedRef.current.classList.add(styles['Nuvola-in-right-Animazione']);
+                }
                 const nuvolaAhmedPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
                 if (nuvolaAhmedPosition < 0) {
                     nuvolaAhmedRef.current.style.position = 'fixed';
                     nuvolaAhmedRef.current.style.top = '0vh';
                 }
+                
             }
 
             if (nuvolaMattiaRef.current) {
+                var iconPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (iconPosition < windowHeight) {
+                    nuvolaMattiaRef.current.classList.add(styles['Nuvola-in-left-Animazione']);
+                }
                 const nuvolaMattiaPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
                 if (nuvolaMattiaPosition < 0) {
                     nuvolaMattiaRef.current.style.position = 'fixed';
