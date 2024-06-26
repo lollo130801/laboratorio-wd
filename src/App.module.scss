@@ -1,22 +1,27 @@
+
+/*CLASSI SFONDI*/
 .bg_1 {
   height: 1500vh;
   width: 100%;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .bg_2 {
   height: 650vh;
   width: 100%;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
+
+/*CLASSI IMMAGINI HEADER*/
 .titolo{
   position: absolute;
   height: 35vh;
   top: 35vh;
   right: 50vh;
+  z-index: 3;
 }
 
 .nuvoleTitolo{
@@ -24,6 +29,26 @@
   height: 35vh;
   top: 35vh;
   right: 25vh;
+  z-index: 2;
+}
+
+/*CLASSI POPUP NUVOLE MATTIA / AHMED*/
+.nuvolaAhmed{
+  position: absolute;
+  height: 15vh;
+  top: 220vh;
+  right: -5vh;
+  order:2;
+  z-index: 3;
+}
+
+.nuvolaMattia{
+  position: absolute;
+  height: 15vh;
+  top: 220vh;
+  left: -5vh;
+  order:2;
+  z-index: 3;
 }
 
 .App {
@@ -39,14 +64,7 @@
 
 }
 
-.left_container{
-  position: relative;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-
-}
-
+/*CLASSI PER MOBILE 1200PX*/
 @media screen and (max-width: 1200px) {
 
 
@@ -65,9 +83,23 @@
     right: 15vh;
   }
 
-
-
-
+  .nuvolaAhmed{
+    position: absolute;
+    height: 15vh;
+    top: 100vh;
+    right: -5vh;
+    order:2;
+    z-index: 2;
+  }
+  
+  .nuvolaMattia{
+    position: absolute;
+    height: 15vh;
+    top: 100vh;
+    left: -5vh;
+    order:2;
+    z-index: 2;
+  }
   body {
     overflow-x: auto !important; /* Enable horizontal scrolling */
   }
@@ -84,14 +116,29 @@
   .icon_5_right,
   .icon_6_right,
   .icon_7_right,
+  .icon_8_right,
+  .icon_9_right,
+  .icon_10_right,
+  .icon_11_right,
+  .icon_12_right,
+  .icon_13_right,
+  .icon_14_right,
   .text_1_right,
   .text_2_right,
   .text_3_right,
   .text_4_right,
   .text_5_right,
   .text_6_right,
-  .text_7_right {
+  .text_7_right,
+  .text_8_right,
+  .text_9_right,
+  .text_10_right,
+  .text_11_right,
+  .text_12_right,
+  .text_13_right,
+  .text_14_right {
     width: 84vw !important; /* Make the icons half the viewport width */
+    position: absolute;
   }
 }
 
@@ -201,89 +248,202 @@
 .icon_5_right,
 .icon_6_right,
 .icon_7_right,
+.icon_8_right,
+.icon_9_right,
+.icon_10_right,
+.icon_11_right,
+.icon_12_right,
+.icon_13_right,
+.icon_14_right,
 .text_1_right,
 .text_2_right,
 .text_3_right,
 .text_4_right,
 .text_5_right,
 .text_6_right,
-.text_7_right {
+.text_7_right,
+.text_8_right,
+.text_9_right,
+.text_10_right,
+.text_11_right,
+.text_12_right,
+.text_13_right,
+.text_14_right{
   width: 45vw;
   margin-right: 1%;
   position: absolute;
+  z-index: 2;
 }
 
-.icon_1_right {
-  order: 1;
-  top:30vh;
+.icon_1_right{
+  order:1;
+  top:260vh;
+  right:5vw;
+  width:40vw;
+}
+.icon_2_right{
+  order:1;
+  top:450vh;
+  right:5vw;
+  width:40vw;
+}
+.icon_3_right{
+  order:1;
+  top:690vh;
+  right:8vw;
+  width:30vw;
+}
+.icon_4_right{
+  order:1;
+  top:820vh;
+  right:5vw;
+  width:35vw;
+}
+.icon_5_right{
+  order:1;
+  top:1390vh;
+  right:5vw;
+  width:40vw;
+}
+.icon_6_right{
+  order:1;
+  top:2785vh;
+  right:5vw;
+  width:35vw;
+}
+.icon_7_right{
+  order:1;
+  top:3580vh;
+  right:5vw;
+  width:35vw;
+}
+.icon_8_right{
+  order:1;
+  top:4145vh;
+  right:5vw;
+  width:38vw;
+}
+.icon_9_right{
+  order:1;
+  top:4270vh;
+  right:5vw;
+  width:38vw;
+}
+.icon_10_right{
+  order:1;
+  top:4508vh;
+  right:5vw;
+  width:40vw;
+}
+.icon_11_right{
+  order:1;
+  top:5110vh;
+  right:5vw;
+  width:33vw;
+}
+.icon_12_right{
+  order:1;
+  top:5325vh;
+  right:5vw;
+  width:30vw;
+}
+.icon_13_right{
+  order:1;
+  top:5770vh;
   right:10vw;
+  width:28vw;
+}
+.icon_14_right{
+  order:1;
+  top:6130vh;
+  right:8vw;
+  width:35vw;
 }
 
-.text_1_right {
-  order: 2;
-  margin-bottom: 5%; /* Decrease this value to reduce space on the right side of the icon */
+.text_1_right{
+  order:1;
+  top:310vh;
+  right:5vw;
+  width:40vw;
 }
-
-.icon_2_right {
-  order: 3;
-  top:90vh;
+.text_2_right{
+  order:1;
+  top:520vh;
+  right:8vw;
+  width:35vw;
+}
+.text_3_right{
+  order:1;
+  top:755vh;
+  right:8vw;
+  width:30vw;
+}
+.text_4_right{
+  order:1;
+  top:877vh;
+  right:5vw;
+  width:35vw;
+}
+.text_5_right{
+  order:1;
+  top:1450vh;
+  right:5vw;
+  width:40vw;
+}
+.text_6_right{
+  order:1;
+  top:2855vh;
+  right:5vw;
+  width:35vw;
+}
+.text_7_right{
+  order:1;
+  top:3645vh;
+  right:5vw;
+  width:35vw;
+}
+.text_8_right{
+  order:1;
+  top:4205vh;
+  right:5vw;
+  width:38vw;
+}
+.text_9_right{
+  order:1;
+  top:4323vh;
+  right:7vw;
+  width:35vw;
+}
+.text_10_right{
+  order:1;
+  top:4555vh;
+  right:5vw;
+  width:40vw;
+}
+.text_11_right{
+  order:1;
+  top:5190vh;
+  right:5vw;
+  width:33vw;
+}
+.text_12_right{
+  order:1;
+  top:5390vh;
+  right:5vw;
+  width:33vw;
+}
+.text_13_right{
+  order:1;
+  top:5840vh;
   right:10vw;
+  width:30vw;
 }
-
-.text_2_right {
-  order: 4;
-  margin-bottom: 5%;
+.text_14_right{
+  order:1;
+  top:6195vh;
+  right:8vw;
+  width:35vw;
 }
-
-.icon_3_right {
-  order: 5;
-  top:150vh;
-  right:10vw;
-}
-
-.text_3_right {
-  order: 6;
-  top:30vh;
-  right:10vw;
-}
-
-.icon_4_right {
-  order: 7;
-  top:210vh;
-  right:10vw;
-}
-
-.text_4_right {
-  order: 8;
-  margin-bottom: 5%;
-}
-.icon_5_right {
-  order: 9;
-  top:270vh;
-  right:10vw;
-}
-.text_5_right {
-  order: 0;
-  margin-bottom: 5%;
-}
-.icon_6_right {
-  order: 11;
-  top:330vh;
-  right:10vw;
-}
-.text_6_right {
-  order: 12;
-  margin-bottom: 5%;
-}
-.icon_7_right {
-  order: 13;
-  top:390vh;
-  right:10vw;
-}
-.text_7_right {
-  order: 14;
-}
-
 
 
 .AnimazioneTitolo {
@@ -357,7 +517,6 @@
   -webkit-animation: scale-in-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
 
 .scale-in-top {
   -webkit-animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -435,3 +594,24 @@
     opacity: 0;
   }
 }
+
+.Nuvola-in-right-Animazione{-webkit-animation:bounce-in-right 1.1s both;animation:bounce-in-right 1.1s both}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-6-26 16:24:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes bounce-in-right{0%{-webkit-transform:translateX(600px);transform:translateX(600px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateX(68px);transform:translateX(68px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateX(32px);transform:translateX(32px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateX(8px);transform:translateX(8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-right{0%{-webkit-transform:translateX(600px);transform:translateX(600px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateX(68px);transform:translateX(68px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateX(32px);transform:translateX(32px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateX(8px);transform:translateX(8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+
+.Nuvola-in-left-Animazione{-webkit-animation:bounce-in-left 1.1s both;animation:bounce-in-left 1.1s both}
+/* ----------------------------------------------
+ * Generated by Animista on 2024-6-26 16:28:29
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+ @-webkit-keyframes bounce-in-left{0%{-webkit-transform:translateX(-600px);transform:translateX(-600px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateX(-68px);transform:translateX(-68px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateX(-28px);transform:translateX(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateX(-8px);transform:translateX(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes bounce-in-left{0%{-webkit-transform:translateX(-600px);transform:translateX(-600px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}38%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;opacity:1}55%{-webkit-transform:translateX(-68px);transform:translateX(-68px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}72%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}81%{-webkit-transform:translateX(-28px);transform:translateX(-28px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}90%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}95%{-webkit-transform:translateX(-8px);transform:translateX(-8px);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}100%{-webkit-transform:translateX(0);transform:translateX(0);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}

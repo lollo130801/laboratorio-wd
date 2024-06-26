@@ -105,15 +105,76 @@ function App() {
     const mattiatext14Ref = useRef<HTMLImageElement>(null);
     const mattiatext15Ref = useRef<HTMLImageElement>(null);
     const mattiatext16Ref = useRef<HTMLImageElement>(null);
-  
+
+    const Ahmed1Ref = useRef<HTMLImageElement>(null);
+    const Ahmed2Ref = useRef<HTMLImageElement>(null);
+    const Ahmed3Ref = useRef<HTMLImageElement>(null);
+    const Ahmed4Ref = useRef<HTMLImageElement>(null);
+    const Ahmed5Ref = useRef<HTMLImageElement>(null);
+    const Ahmed6Ref = useRef<HTMLImageElement>(null);
+    const Ahmed7Ref = useRef<HTMLImageElement>(null);
+    const Ahmed8Ref = useRef<HTMLImageElement>(null);
+    const Ahmed9Ref = useRef<HTMLImageElement>(null);
+    const Ahmed10Ref = useRef<HTMLImageElement>(null);
+    const Ahmed11Ref = useRef<HTMLImageElement>(null);
+    const Ahmed12Ref = useRef<HTMLImageElement>(null);
+    const Ahmed13Ref = useRef<HTMLImageElement>(null);
+    const Ahmed14Ref = useRef<HTMLImageElement>(null);
+
+    const AhmedText1Ref = useRef<HTMLImageElement>(null);
+    const AhmedText2Ref = useRef<HTMLImageElement>(null);
+    const AhmedText3Ref = useRef<HTMLImageElement>(null);
+    const AhmedText4Ref = useRef<HTMLImageElement>(null);
+    const AhmedText5Ref = useRef<HTMLImageElement>(null);
+    const AhmedText6Ref = useRef<HTMLImageElement>(null);
+    const AhmedText7Ref = useRef<HTMLImageElement>(null);
+    const AhmedText8Ref = useRef<HTMLImageElement>(null);
+    const AhmedText9Ref = useRef<HTMLImageElement>(null);
+    const AhmedText10Ref = useRef<HTMLImageElement>(null);
+    const AhmedText11Ref = useRef<HTMLImageElement>(null);
+    const AhmedText12Ref = useRef<HTMLImageElement>(null);
+    const AhmedText13Ref = useRef<HTMLImageElement>(null);
+    const AhmedText14Ref = useRef<HTMLImageElement>(null);
+    const nuvolaAhmedRef = useRef<HTMLImageElement>(null);
+    const nuvolaMattiaRef = useRef<HTMLImageElement>(null);
 
     // Add scroll event listener
     useEffect(() => {
         const handleScroll = () => {
             const iconsleft = [mattia1Ref, mattia2Ref, mattia3Ref, mattia4Ref, mattia5Ref, mattia6Ref, mattia7Ref, mattia8Ref, mattia9Ref, mattia10Ref, mattia11Ref, mattia12Ref, mattia13Ref, mattia14Ref, mattia15Ref, mattia16Ref];
-            const text = [ mattiatext1Ref, mattiatext2Ref, mattiatext3Ref, mattiatext4Ref, mattiatext5Ref, mattiatext6Ref, mattiatext7Ref, mattiatext8Ref, mattiatext9Ref, mattiatext10Ref, mattiatext11Ref, mattiatext12Ref, mattiatext13Ref, mattiatext14Ref, mattiatext15Ref, mattiatext16Ref];
+            const iconsright = [Ahmed1Ref, Ahmed2Ref, Ahmed3Ref, Ahmed4Ref, Ahmed5Ref, Ahmed6Ref, Ahmed7Ref, Ahmed8Ref, Ahmed9Ref, Ahmed10Ref, Ahmed11Ref, Ahmed12Ref, Ahmed13Ref, Ahmed14Ref];
+            const text = [ mattiatext1Ref, mattiatext2Ref, mattiatext3Ref, mattiatext4Ref, mattiatext5Ref, mattiatext6Ref, mattiatext7Ref, mattiatext8Ref,
+                             mattiatext9Ref, mattiatext10Ref, mattiatext11Ref, mattiatext12Ref, mattiatext13Ref, mattiatext14Ref, mattiatext15Ref, mattiatext16Ref,
+                             AhmedText1Ref, AhmedText2Ref, AhmedText3Ref, AhmedText4Ref, AhmedText5Ref, AhmedText6Ref, AhmedText7Ref, AhmedText8Ref, AhmedText9Ref,
+                              AhmedText10Ref, AhmedText11Ref, AhmedText12Ref, AhmedText13Ref, AhmedText14Ref];
+           
+            // Controllo Animazione Nuvole Ahmed e Mattia
+            if (nuvolaAhmedRef.current) {
+                var iconPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (iconPosition < windowHeight) {
+                    nuvolaAhmedRef.current.classList.add(styles['Nuvola-in-right-Animazione']);
+                }
+                const nuvolaAhmedPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
+                if (nuvolaAhmedPosition < 0) {
+                    nuvolaAhmedRef.current.style.position = 'fixed';
+                    nuvolaAhmedRef.current.style.top = '0vh';
+                }   
+            }
+            if (nuvolaMattiaRef.current) {
+                var iconPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
+                var windowHeight = window.innerHeight;
+                if (iconPosition < windowHeight) {
+                    nuvolaMattiaRef.current.classList.add(styles['Nuvola-in-left-Animazione']);
+                }
+                const nuvolaMattiaPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
+                if (nuvolaMattiaPosition < 0) {
+                    nuvolaMattiaRef.current.style.position = 'fixed';
+                    nuvolaMattiaRef.current.style.top = `0vh`;
+                }
+            }
 
-            // Controllo se l'elemento è visibile
+            // Animazioni Icone Left
             iconsleft.forEach((iconRef) => {
                 if (iconRef.current) {
                     var iconPosition = iconRef.current.getBoundingClientRect().top;
@@ -128,7 +189,24 @@ function App() {
                     }
                 }
             });
+            
+            // Animazioni Icone Right
+            iconsright.forEach((iconRef) => {
+                if (iconRef.current) {
+                    var iconPosition = iconRef.current.getBoundingClientRect().top;
+                    var windowHeight = window.innerHeight;
+                    var windowCenter = windowHeight;
+                    if (iconPosition < windowCenter) {
+                        // Se l'icona supera il centro dello schermo aggiungo la classe per l'animazione
+                        iconRef.current.classList.add(styles['slide-in-right']);
+                    } else {
+                        // Altrimenti rimuovo la classe
+                        iconRef.current.classList.remove(styles['slide-in-right']);
+                    }
+                }
+            });
 
+            // Controllo Animazione Testo
             text.forEach((textRef) => {
                 if (textRef.current) {
                     var textPosition = textRef.current.getBoundingClientRect().top;
@@ -140,6 +218,7 @@ function App() {
                     }
                 }
             });
+
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -207,10 +286,43 @@ function App() {
             <img src={bg4} alt="" className={styles.bg_1} />
             <img src={bg5} alt="" className={styles.bg_2} />
 
-            
 
-            <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)}/>
-            <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)}/>
+
+
+            <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)} />
+            <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)} />
+            <img ref={nuvolaAhmedRef} src={nuvolaAhmed} alt="Nuvola Ahmed" className={styles.nuvolaAhmed} />
+            <img ref={nuvolaMattiaRef} src={nuvolaMattia} alt="Nuvola Mattia" className={styles.nuvolaMattia} />
+            
+            <img ref={Ahmed1Ref} src={Ahmed1Svg0} alt="" className={styles.icon_1_right} />
+            <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="" className={styles.icon_2_right} />
+            <img ref={Ahmed3Ref} src={Ahmed3Svg0} alt="" className={styles.icon_3_right} />
+            <img ref={Ahmed4Ref} src={Ahmed4Svg0} alt="" className={styles.icon_4_right} />
+            <img ref={Ahmed5Ref} src={Ahmed5Svg0} alt="" className={styles.icon_5_right} />
+            <img ref={Ahmed6Ref} src={Ahmed6Svg0} alt="" className={styles.icon_6_right} />
+            <img ref={Ahmed7Ref} src={Ahmed7Svg0} alt="" className={styles.icon_7_right} />
+            <img ref={Ahmed8Ref} src={Ahmed8Svg0} alt="" className={styles.icon_8_right} />
+            <img ref={Ahmed9Ref} src={Ahmed9Svg0} alt="" className={styles.icon_9_right} />
+            <img ref={Ahmed10Ref} src={Ahmed10Svg0} alt="" className={styles.icon_10_right} />
+            <img ref={Ahmed11Ref} src={Ahmed11Svg0} alt="" className={styles.icon_11_right} />
+            <img ref={Ahmed12Ref} src={Ahmed12Svg0} alt="" className={styles.icon_12_right} />
+            <img ref={Ahmed13Ref} src={Ahmed13Svg0} alt="" className={styles.icon_13_right} />
+            <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
+            
+            <img ref={AhmedText1Ref} src={txtAhmed1Svg} alt="" className={styles.text_1_right} />
+            <img ref={AhmedText2Ref} src={txtAhmed2Svg} alt="" className={styles.text_2_right} />
+            <img ref={AhmedText3Ref} src={txtAhmed3Svg} alt="" className={styles.text_3_right} />
+            <img ref={AhmedText4Ref} src={txtAhmed4Svg} alt="" className={styles.text_4_right} />
+            <img ref={AhmedText5Ref} src={txtAhmed5Svg} alt="" className={styles.text_5_right} />
+            <img ref={AhmedText6Ref} src={txtAhmed6Svg} alt="" className={styles.text_6_right} />
+            <img ref={AhmedText7Ref} src={txtAhmed7Svg} alt="" className={styles.text_7_right} />
+            <img ref={AhmedText8Ref} src={txtAhmed8Svg} alt="" className={styles.text_8_right} />
+            <img ref={AhmedText9Ref} src={txtAhmed9Svg} alt="" className={styles.text_9_right} />
+            <img ref={AhmedText10Ref} src={txtAhmed10Svg} alt="" className={styles.text_10_right} />
+            <img ref={AhmedText11Ref} src={txtAhmed11Svg} alt="" className={styles.text_11_right} />
+            <img ref={AhmedText12Ref} src={txtAhmed12Svg} alt="" className={styles.text_12_right} />
+            <img ref={AhmedText13Ref} src={txtAhmed13Svg} alt="" className={styles.text_13_right} />
+            <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
 
 
         </div>
