@@ -10,7 +10,19 @@
   position: relative;
 }
 
+.titolo{
+  position: absolute;
+  height: 35vh;
+  top: 35vh;
+  right: 50vh;
+}
 
+.nuvoleTitolo{
+  position: absolute;
+  height: 35vh;
+  top: 35vh;
+  right: 25vh;
+}
 
 .App {
   text-align: center;
@@ -28,6 +40,26 @@
 
 
 @media screen and (max-width: 1200px) {
+
+
+
+  .titolo{
+    position: absolute;
+    height: 15vh;
+    top: 15vh;
+    right: 25vh;
+  }
+  
+  .nuvoleTitolo{
+    position: absolute;
+    height: 15vh;
+    top: 15vh;
+    right: 15vh;
+  }
+
+
+
+
   body {
     overflow-x: auto !important; /* Enable horizontal scrolling */
   }
@@ -138,6 +170,12 @@
   order: 14;
 }
 
+
+.AnimazioneTitolo {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 .slide-in-right {
   -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -167,6 +205,13 @@
     opacity: 1;
   }
 }
+
+
+.AnimazioneNuvole {
+  -webkit-animation: scale-in-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-top 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 
 .scale-in-top {
   -webkit-animation: scale-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
