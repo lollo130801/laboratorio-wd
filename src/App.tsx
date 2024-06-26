@@ -1,6 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './App.module.scss';
 import Classnames from 'classnames';
+import bg1 from './assets/bg_1.png';
+import bg2 from './assets/bg_2.png';
+import bg3 from './assets/bg_3.png';
+import bg4 from './assets/bg_4.png';
+import bg5 from './assets/bg_5.png';
+import nuvoleTitolo from './assets/iconeTitolo/nuvoleTitolo.svg';
+import titolo from './assets/iconeTitolo/titolo.svg';
 import Mattia1Svg0 from './assets/mattia_1.svg';
 import Mattia2Svg0 from './assets/mattia_2.svg';
 import Mattia3Svg0 from './assets/mattia_3.svg';
@@ -61,13 +68,8 @@ import txtAhmed11Svg from './assets/txtAhmed11.svg';
 import txtAhmed12Svg from './assets/txtAhmed12.svg';
 import txtAhmed13Svg from './assets/txtAhmed13.svg';
 import txtAhmed14Svg from './assets/txtAhmed14.svg';
-import bg1 from './assets/bg_1.png';
-import bg2 from './assets/bg_2.png';
-import bg3 from './assets/bg_3.png';
-import bg4 from './assets/bg_4.png';
-import bg5 from './assets/bg_5.png';
-import nuvoleTitolo from './assets/iconeTitolo/nuvoleTitolo.svg';
-import titolo from './assets/iconeTitolo/titolo.svg';
+import nuvolaMattia from './assets/nuvolaMattia.svg';
+import nuvolaAhmed from './assets/nuvolaAhmed.svg';
 
 function App() {
     //Per ogni icona e testo creo un riferimento
