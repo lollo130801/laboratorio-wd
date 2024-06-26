@@ -94,10 +94,35 @@ function App() {
     const text5RefPopup = useRef<HTMLDivElement>(null);
     const text6RefPopup = useRef<HTMLDivElement>(null);
     const text7RefPopup = useRef<HTMLDivElement>(null);
+    const nuvolaAhmedRef = useRef<HTMLImageElement>(null);
+    const nuvolaMattiaRef = useRef<HTMLImageElement>(null);
 
     // Add scroll event listener
     useEffect(() => {
         const handleScroll = () => {
+
+
+            if (nuvolaAhmedRef.current) {
+                const nuvolaAhmedPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
+                if (nuvolaAhmedPosition < 0) {
+                    nuvolaAhmedRef.current.style.position = 'fixed';
+                    nuvolaAhmedRef.current.style.top = '0vh';
+                }
+            }
+
+            if (nuvolaMattiaRef.current) {
+                const nuvolaMattiaPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
+                if (nuvolaMattiaPosition < 0) {
+                    nuvolaMattiaRef.current.style.position = 'fixed';
+                    nuvolaMattiaRef.current.style.top = `0vh`;
+                }
+            }
+
+
+
+
+
+            // Creo un array con tutti i riferimenti
             const icons = [icon1Ref, icon2Ref, icon3Ref, icon4Ref, icon5Ref, icon6Ref, icon7Ref];
             const text = [
                 text1Ref,
@@ -143,6 +168,7 @@ function App() {
                     }
                 }
             });
+
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -156,7 +182,7 @@ function App() {
     return (
         <div className={styles.App}>
 
-
+            
 
             <img src={bg1} alt="" className={styles.bg_1} />
             <img src={bg2} alt="" className={styles.bg_1} />
@@ -164,23 +190,13 @@ function App() {
             <img src={bg4} alt="" className={styles.bg_1} />
             <img src={bg5} alt="" className={styles.bg_2} />
 
-            
-                <img ref={icon1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_right} />
 
-                <img ref={icon2Ref} src={Mattia2Svg0} alt="" className={styles.icon_2_right} />
 
-                <img ref={icon3Ref} src={Mattia3Svg0} alt="" className={styles.icon_3_right} />
 
-                <img ref={icon4Ref} src={Mattia4Svg0} alt="" className={styles.icon_4_right} />
-
-                <img ref={icon5Ref} src={Mattia5Svg0} alt="" className={styles.icon_5_right} />
-                
-                <img ref={icon6Ref} src={Mattia6Svg0} alt="" className={styles.icon_6_right} />
-
-                <img ref={icon7Ref} src={Mattia7Svg0} alt="" className={styles.icon_7_right} />
-            
-                <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)}/>
-                <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)}/>
+            <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)} />
+            <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)} />
+            <img ref={nuvolaAhmedRef} src={nuvolaAhmed} alt="Nuvola Ahmed" className={styles.nuvolaAhmed} />
+            <img ref={nuvolaMattiaRef} src={nuvolaMattia} alt="Nuvola Mattia" className={styles.nuvolaMattia} />
 
 
 
