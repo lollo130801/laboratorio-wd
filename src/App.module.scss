@@ -68,7 +68,8 @@
 
 
 /*CLASSI PER MOBILE 1200PX*/
-@media screen and (min-width: 601px) and (max-width: 1200px) {
+/*CLASSI PER MOBILE 1200PX*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .titolo{
     position: absolute;
     height: 25vh;
@@ -120,79 +121,70 @@
     z-index: 2;
   }
 
-  .icon_1_right{
+  .icon_text_container_right_1{
     top:196vh !important;
-    width:80vw !important;
+    right:55vw !important;
   }
   .text_1_right{
-    top:230vh !important;
-    right:10vw !important;
+    margin-top:33vh !important;
     width:70vw !important;
   }
 
-  .icon_2_right{
+  .icon_text_container_right_2{
     top:336vh !important;
-    right:10vw !important;
-    width:80vw !important;
+    right:50vw !important;
   }
   .text_2_right{
-    top:384vh !important;
-    right:15vw !important;
+    margin-top:46vh !important;
     width:70vw !important;
   }
 
-  .icon_3_right{
+  .icon_text_container_right_3{
     top:507vh !important;
-    right:14vw !important;
-    width:75vw !important;
+    right:50vw !important;
+  }
+  .icon_3_right{
+    width: 60vw !important;
   }
   .text_3_right{
-    top:560vh !important;
-    right:23vw !important;
-    width:50vw !important;
+    margin-top:46vh !important;
+    width:55vw !important;
   }
 
-  .icon_4_right{
-    top:600vh !important;
-    right:11vw !important;
-    width:80vw !important;
+
+  .icon_text_container_right_4{
+    top:595vh !important;
+    right:50vw !important;
   }
   .text_4_right{
-    top:644vh !important;
-    right:14vw !important;
+    margin-top:46vh !important;
     width:70vw !important;
   }
 
-  .icon_5_right{
-    top:1026vh !important;
-    right:15vw !important;
-    width:80vw !important;
+  .icon_text_container_right_5{
+    top:1022vh !important;
+    right:50vw !important;
   }
   .text_5_right{
-    top:1066vh !important;
-    right:19vw !important;
+    margin-top:43vh !important;
     width:70vw !important;
   }
 
-  .icon_6_right{
-    top:2047vh !important;
-    right:15vw !important;
-    width:80vw !important;
+  .icon_text_container_right_6{
+    top:2081vh !important;
+    right:50vw !important;
   }
   .text_6_right{
-    top:2100vh !important;
-    right:20vw !important;
+    margin-top:57vh !important;
     width:70vw !important;
   }
 
-  .icon_7_right{
+  .icon_text_container_right_7{
     top:2629vh !important;
-    right:11vw !important;
-    width:80vw !important;
+    right:50vw !important;
   }
   .text_7_right{
-    top:2679vh !important;
-    right:14vw !important;
+    margin-top:57vh !important;
     width:70vw !important;
   }
 
