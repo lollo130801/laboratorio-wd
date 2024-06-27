@@ -86,7 +86,7 @@
     top: 100vh;
     right: -5vh;
     order:2;
-    z-index: 2;
+    z-index: 3;
   }
   
   .nuvolaMattia{
@@ -95,7 +95,7 @@
     top: 100vh;
     left: -5vh;
     order:2;
-    z-index: 2;
+    z-index: 3;
   }
 
   body {
@@ -114,6 +114,7 @@
   .text_9_right, .text_10_right, .text_11_right, .text_12_right, .text_13_right, .text_14_right{
     width: 84vw !important; /* Make the icons half the viewport width */
     position: absolute;
+    z-index: 2;
   }
 
   .icon_1_right{
@@ -276,6 +277,7 @@
   .text_9_left, .text_10_left, .text_11_left, .text_12_left, .text_13_left, .text_14_left, .text_15_left, .text_16_left{
     width: 84vw !important;
     position: absolute;
+    z-index: 2;
   }
 
   .icon_1_left{
