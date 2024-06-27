@@ -64,6 +64,48 @@
 
 }
 
+
+@media screen and (max-width: 600px) {
+  .App {
+    width: 200vw !important; /* Make the app's width twice the viewport width */
+    height: 6970vw !important;
+  }
+
+  .titolo{
+    position: absolute;
+    height: 15vh;
+    top: 15vh;
+    right: 25vh
+  }
+  
+  .nuvoleTitolo{
+    position: absolute;
+    height: 15vh;
+    top: 15vh;
+    right: 15vh;
+  }
+
+  .nuvolaAhmed{
+    position: absolute;
+    height: 15vh;
+    right: -5vh;
+    order:2;
+    z-index: 3;
+  }
+  
+  .nuvolaMattia{
+    position: absolute;
+    height: 15vh;
+    top: 50vh;
+    left: -5vh;
+    order:2;
+    z-index: 3;
+  }
+
+
+
+}
+
 /*CLASSI PER MOBILE 1200PX*/
 @media screen and (min-width: 600px) and (max-width: 1200px) {
   .titolo{
