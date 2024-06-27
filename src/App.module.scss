@@ -64,6 +64,48 @@
 
 }
 
+
+@media screen and (max-width: 600px) {
+  .App {
+    width: 200vw !important; /* Make the app's width twice the viewport width */
+    height: 6970vw !important;
+  }
+
+  .titolo{
+    position: absolute;
+    height: 15vh;
+    top: 15vh;
+    right: 25vh
+  }
+  
+  .nuvoleTitolo{
+    position: absolute;
+    height: 15vh;
+    top: 15vh;
+    right: 15vh;
+  }
+
+  .nuvolaAhmed{
+    position: absolute;
+    height: 15vh;
+    right: -5vh;
+    order:2;
+    z-index: 3;
+  }
+  
+  .nuvolaMattia{
+    position: absolute;
+    height: 15vh;
+    top: 50vh;
+    left: -5vh;
+    order:2;
+    z-index: 3;
+  }
+
+
+
+}
+
 /*CLASSI PER MOBILE 1200PX*/
 @media screen and (min-width: 600px) and (max-width: 1200px) {
   .titolo{
@@ -86,7 +128,7 @@
     top: 100vh;
     right: -5vh;
     order:2;
-    z-index: 2;
+    z-index: 3;
   }
   
   .nuvolaMattia{
@@ -95,7 +137,7 @@
     top: 100vh;
     left: -5vh;
     order:2;
-    z-index: 2;
+    z-index: 3;
   }
 
   body {
@@ -114,6 +156,7 @@
   .text_9_right, .text_10_right, .text_11_right, .text_12_right, .text_13_right, .text_14_right{
     width: 84vw !important; /* Make the icons half the viewport width */
     position: absolute;
+    z-index: 2;
   }
 
   .icon_1_right{
@@ -276,6 +319,7 @@
   .text_9_left, .text_10_left, .text_11_left, .text_12_left, .text_13_left, .text_14_left, .text_15_left, .text_16_left{
     width: 84vw !important;
     position: absolute;
+    z-index: 2;
   }
 
   .icon_1_left{
@@ -656,167 +700,183 @@
 }
 
 //ICONE_TESTI DESTRA
-
-.icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right, .icon_8_right,
-.icon_9_right, .icon_10_right, .icon_11_right, .icon_12_right, .icon_13_right, .icon_14_right,
-.text_1_right, .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right, .text_8_right,
-.text_9_right, .text_10_right, .text_11_right, .text_12_right, .text_13_right, .text_14_right{
-  width: 45vw;
-  right: 6vw;
+.icon_text_container_right_1, .icon_text_container_right_2, .icon_text_container_right_3, .icon_text_container_right_4,
+.icon_text_container_right_5, .icon_text_container_right_6, .icon_text_container_right_7, .icon_text_container_right_8,
+.icon_text_container_right_9, .icon_text_container_right_10, .icon_text_container_right_11, .icon_text_container_right_12,
+.icon_text_container_right_13, .icon_text_container_right_14, .icon_text_container_right_15, .icon_text_container_right_16{
   position: absolute;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items vertically in the center */
+  justify-content: start; /* Align items to the start of the container */
 }
 
-.icon_1_right{
+.icon_text_container_right_1{
   top:260vh;
+  right: 6vw;
+}
+.icon_1_right{
   width:40vw;
 }
 .text_1_right{
-  top:310vh;
-  right:8vw;
+  margin-top: 1vh;
   width:35vw;
 }
 
-.icon_2_right{
+.icon_text_container_right_2{
   top:450vh;
-  right:5vw;
+  right: 5vw;
+}
+.icon_2_right{
   width:40vw;
 }
 .text_2_right{
-  top:521vh;
-  right:8vw;
+  margin-top: 1vh;
   width:35vw;
 }
 
-.icon_3_right{
+.icon_text_container_right_3{
   top:690vh;
   right:8vw;
+}
+.icon_3_right{
   width:30vw;
 }
 .text_3_right{
-  top:755vh;
-  right:8vw;
+  margin-top: 1vh;
   width:30vw;
 }
 
-.icon_4_right{
+.icon_text_container_right_4{
   top:820vh;
   right:5vw;
+}
+.icon_4_right{
   width:35vw;
 }
 .text_4_right{
-  top:877vh;
-  right:5vw;
+  margin-top: 1vh;
   width:35vw;
 }
 
-.icon_5_right{
+.icon_text_container_right_5{
   top:1392vh;
   right:5vw;
+}
+.icon_5_right{
   width:40vw;
 }
 .text_5_right{
-  top:1447vh;
-  right:7vw;
+  margin-top: 1vh;
   width:35vw;
 }
 
-.icon_6_right{
+.icon_text_container_right_6{
   top:2785vh;
   right:5vw;
+}
+.icon_6_right{
   width:35vw;
 }
 .text_6_right{
-  top:2855vh;
-  right:5vw;
+  margin-top: 1vh;
   width:35vw;
 }
 
-.icon_7_right{
+.icon_text_container_right_7{
   top:3580vh;
   right:5vw;
+}
+.icon_7_right{
   width:35vw;
 }
 .text_7_right{
-  top:3646vh;
-  right:5vw;
+  margin-top: 1vh;
   width:35vw;
 }
 
-.icon_8_right{
+.icon_text_container_right_8{
   top:4145vh;
   right:5vw;
+}
+.icon_8_right{
   width:38vw;
 }
 .text_8_right{
-  top:4205vh;
-  right:5vw;
+  margin-top: 1vh;
   width:38vw;
 }
 
-.icon_9_right{
+.icon_text_container_right_9{
   top:4270vh;
   right:5vw;
+}
+.icon_9_right{
   width:38vw;
 }
 .text_9_right{
-  top:4323vh;
-  right:7vw;
+  margin-top: 1vh;
   width:35vw;
 }
 
-.icon_10_right{
+.icon_text_container_right_10{
   top:4508vh;
   right:5vw;
+}
+.icon_10_right{
   width:40vw;
 }
 .text_10_right{
-  top:4555vh;
-  right:5vw;
+  margin-top: 1vh;
   width:40vw;
 }
 
-.icon_11_right{
+.icon_text_container_right_11{
   top:5110vh;
   right:5vw;
+}
+.icon_11_right{
   width:33vw;
 }
 .text_11_right{
-  top:5190vh;
-  right:5vw;
+  margin-top: 1vh;
   width:33vw;
 }
 
-.icon_12_right{
+.icon_text_container_right_12{
   top:5325vh;
   right:5vw;
+}
+.icon_12_right{
   width:30vw;
 }
 .text_12_right{
-  top:5390vh;
-  right:5vw;
+  margin-top: 1vh;
   width:33vw;
 }
 
-.icon_13_right{
+.icon_text_container_right_13{
   top:5770vh;
   right:10vw;
+}
+.icon_13_right{
   width:28vw;
 }
 .text_13_right{
-  top:5840vh;
-  right:10vw;
+  margin-top: 1vh;
   width:30vw;
 }
 
-.icon_14_right{
+.icon_text_container_right_14{
   top:6130vh;
   right:8vw;
+}
+.icon_14_right{
   width:35vw;
 }
 .text_14_right{
-  top:6195vh;
-  right:8vw;
+  margin-top: 1vh;
   width:35vw;
 }
 

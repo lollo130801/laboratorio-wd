@@ -350,37 +350,75 @@ function App() {
             <img ref={mattiatext16Ref} src={txtMattia16Svg} alt="" className={styles.text_16_left} />
             </div>
             
+            <div className={styles.icon_text_container_right_1}>
             <img ref={Ahmed1Ref} src={Ahmed1Svg0} alt="" className={styles.icon_1_right} />
-            <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="" className={styles.icon_2_right} />
-            <img ref={Ahmed3Ref} src={Ahmed3Svg0} alt="" className={styles.icon_3_right} />
-            <img ref={Ahmed4Ref} src={Ahmed4Svg0} alt="" className={styles.icon_4_right} />
-            <img ref={Ahmed5Ref} src={Ahmed5Svg0} alt="" className={styles.icon_5_right} />
-            <img ref={Ahmed6Ref} src={Ahmed6Svg0} alt="" className={styles.icon_6_right} />
-            <img ref={Ahmed7Ref} src={Ahmed7Svg0} alt="" className={styles.icon_7_right} />
-            <img ref={Ahmed8Ref} src={Ahmed8Svg0} alt="" className={styles.icon_8_right} />
-            <img ref={Ahmed9Ref} src={Ahmed9Svg0} alt="" className={styles.icon_9_right} />
-            <img ref={Ahmed10Ref} src={Ahmed10Svg0} alt="" className={styles.icon_10_right} />
-            <img ref={Ahmed11Ref} src={Ahmed11Svg0} alt="" className={styles.icon_11_right} />
-            <img ref={Ahmed12Ref} src={Ahmed12Svg0} alt="" className={styles.icon_12_right} />
-            <img ref={Ahmed13Ref} src={Ahmed13Svg0} alt="" className={styles.icon_13_right} />
-            <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
-            
             <img ref={AhmedText1Ref} src={txtAhmed1Svg} alt="" className={styles.text_1_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_2}>
+            <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="" className={styles.icon_2_right} />
             <img ref={AhmedText2Ref} src={txtAhmed2Svg} alt="" className={styles.text_2_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_3}>
+            <img ref={Ahmed3Ref} src={Ahmed3Svg0} alt="" className={styles.icon_3_right} />
             <img ref={AhmedText3Ref} src={txtAhmed3Svg} alt="" className={styles.text_3_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_4}>
+            <img ref={Ahmed4Ref} src={Ahmed4Svg0} alt="" className={styles.icon_4_right} />
             <img ref={AhmedText4Ref} src={txtAhmed4Svg} alt="" className={styles.text_4_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_5}>
+            <img ref={Ahmed5Ref} src={Ahmed5Svg0} alt="" className={styles.icon_5_right} />
             <img ref={AhmedText5Ref} src={txtAhmed5Svg} alt="" className={styles.text_5_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_6}>
+            <img ref={Ahmed6Ref} src={Ahmed6Svg0} alt="" className={styles.icon_6_right} />
             <img ref={AhmedText6Ref} src={txtAhmed6Svg} alt="" className={styles.text_6_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_7}>
+            <img ref={Ahmed7Ref} src={Ahmed7Svg0} alt="" className={styles.icon_7_right} />
             <img ref={AhmedText7Ref} src={txtAhmed7Svg} alt="" className={styles.text_7_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_8}>
+            <img ref={Ahmed8Ref} src={Ahmed8Svg0} alt="" className={styles.icon_8_right} />
             <img ref={AhmedText8Ref} src={txtAhmed8Svg} alt="" className={styles.text_8_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_9}>
+            <img ref={Ahmed9Ref} src={Ahmed9Svg0} alt="" className={styles.icon_9_right} />
             <img ref={AhmedText9Ref} src={txtAhmed9Svg} alt="" className={styles.text_9_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_10}>
+            <img ref={Ahmed10Ref} src={Ahmed10Svg0} alt="" className={styles.icon_10_right} />
             <img ref={AhmedText10Ref} src={txtAhmed10Svg} alt="" className={styles.text_10_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_11}>
+            <img ref={Ahmed11Ref} src={Ahmed11Svg0} alt="" className={styles.icon_11_right} />
             <img ref={AhmedText11Ref} src={txtAhmed11Svg} alt="" className={styles.text_11_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_12}>
+            <img ref={Ahmed12Ref} src={Ahmed12Svg0} alt="" className={styles.icon_12_right} />
             <img ref={AhmedText12Ref} src={txtAhmed12Svg} alt="" className={styles.text_12_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_13}>
+            <img ref={Ahmed13Ref} src={Ahmed13Svg0} alt="" className={styles.icon_13_right} />
             <img ref={AhmedText13Ref} src={txtAhmed13Svg} alt="" className={styles.text_13_right} />
+            </div>
+
+            <div className={styles.icon_text_container_right_14}>
+            <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
             <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
-
-
+            </div>
         </div>
     );
 }
