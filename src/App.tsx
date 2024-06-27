@@ -71,6 +71,11 @@ import txtAhmed14Svg from './assets/txtAhmed14.svg';
 import nuvolaMattia from './assets/nuvolaMattia.svg';
 import nuvolaAhmed from './assets/nuvolaAhmed.svg';
 
+type InitialPositions = {
+    ahmed: number;
+    mattia: number;
+};
+
 function App() {
     //Per ogni icona e testo creo un riferimento
     const mattia1Ref = useRef<HTMLImageElement>(null);
@@ -135,11 +140,22 @@ function App() {
     const AhmedText12Ref = useRef<HTMLImageElement>(null);
     const AhmedText13Ref = useRef<HTMLImageElement>(null);
     const AhmedText14Ref = useRef<HTMLImageElement>(null);
+    
     const nuvolaAhmedRef = useRef<HTMLImageElement>(null);
     const nuvolaMattiaRef = useRef<HTMLImageElement>(null);
+    const initialPositionsRef = useRef<InitialPositions>({ ahmed: 0, mattia: 0 });
 
     // Add scroll event listener
     useEffect(() => {
+        if (nuvolaAhmedRef.current && nuvolaMattiaRef.current) {
+            initialPositionsRef.current = {
+                ahmed: nuvolaAhmedRef.current.getBoundingClientRect().top + window.scrollY,
+                mattia: nuvolaMattiaRef.current.getBoundingClientRect().top + window.scrollY,
+            };
+        }
+
+        const buffer = 5;
+
         const handleScroll = () => {
             const iconsleft = [mattia1Ref, mattia2Ref, mattia3Ref, mattia4Ref, mattia5Ref, mattia6Ref, mattia7Ref, mattia8Ref, mattia9Ref, mattia10Ref, mattia11Ref, mattia12Ref, mattia13Ref, mattia14Ref, mattia15Ref, mattia16Ref];
             const iconsright = [Ahmed1Ref, Ahmed2Ref, Ahmed3Ref, Ahmed4Ref, Ahmed5Ref, Ahmed6Ref, Ahmed7Ref, Ahmed8Ref, Ahmed9Ref, Ahmed10Ref, Ahmed11Ref, Ahmed12Ref, Ahmed13Ref, Ahmed14Ref];
@@ -149,28 +165,39 @@ function App() {
                             AhmedText10Ref, AhmedText11Ref, AhmedText12Ref, AhmedText13Ref, AhmedText14Ref];
 
             // Controllo Animazione Nuvole Ahmed e Mattia
+            const scrollY = window.scrollY;
+
             if (nuvolaAhmedRef.current) {
-                var iconPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
-                var windowHeight = window.innerHeight;
-                if (iconPosition < windowHeight) {
+                const initialAhmedPosition = initialPositionsRef.current.ahmed;
+                const ahmedRect = nuvolaAhmedRef.current.getBoundingClientRect();
+
+                if (ahmedRect.top < window.innerHeight && ahmedRect.top >= 0) {
                     nuvolaAhmedRef.current.classList.add(styles['Nuvola-in-right-Animazione']);
                 }
-                const nuvolaAhmedPosition = nuvolaAhmedRef.current.getBoundingClientRect().top;
-                if (nuvolaAhmedPosition < 0) {
+
+                if (scrollY > initialAhmedPosition - buffer) {
                     nuvolaAhmedRef.current.style.position = 'fixed';
                     nuvolaAhmedRef.current.style.top = '0vh';
-                }   
+                } else {
+                    nuvolaAhmedRef.current.style.position = 'absolute';
+                    nuvolaAhmedRef.current.style.top = `${initialAhmedPosition}px`;
+                }
             }
+
             if (nuvolaMattiaRef.current) {
-                var iconPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
-                var windowHeight = window.innerHeight;
-                if (iconPosition < windowHeight) {
+                const initialMattiaPosition = initialPositionsRef.current.mattia;
+                const mattiaRect = nuvolaMattiaRef.current.getBoundingClientRect();
+
+                if (mattiaRect.top < window.innerHeight && mattiaRect.top >= 0) {
                     nuvolaMattiaRef.current.classList.add(styles['Nuvola-in-left-Animazione']);
                 }
-                const nuvolaMattiaPosition = nuvolaMattiaRef.current.getBoundingClientRect().top;
-                if (nuvolaMattiaPosition < 0) {
+
+                if (scrollY > initialMattiaPosition - buffer) {
                     nuvolaMattiaRef.current.style.position = 'fixed';
-                    nuvolaMattiaRef.current.style.top = `0vh`;
+                    nuvolaMattiaRef.current.style.top = '0vh';
+                } else {
+                    nuvolaMattiaRef.current.style.position = 'absolute';
+                    nuvolaMattiaRef.current.style.top = `${initialMattiaPosition}px`;
                 }
             }
 

@@ -65,19 +65,19 @@
 }
 
 /*CLASSI PER MOBILE 1200PX*/
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 600px) and (max-width: 1200px) {
   .titolo{
     position: absolute;
-    height: 15vh;
-    top: 15vh;
-    right: 25vh;
+    height: 25vh;
+    top: 30vh;
+    right: 40vh
   }
   
   .nuvoleTitolo{
     position: absolute;
-    height: 15vh;
-    top: 15vh;
-    right: 15vh;
+    height: 25vh;
+    top: 30vh;
+    right: 18vh;
   }
 
   .nuvolaAhmed{
@@ -107,6 +107,7 @@
     height: 6970vw !important;
   }
 
+  //icone e testi di destra
   .icon_1_right, .icon_2_right, .icon_3_right, .icon_4_right, .icon_5_right, .icon_6_right, .icon_7_right, .icon_8_right,
   .icon_9_right, .icon_10_right, .icon_11_right, .icon_12_right, .icon_13_right, .icon_14_right,
   .text_1_right, .text_2_right, .text_3_right, .text_4_right, .text_5_right, .text_6_right, .text_7_right, .text_8_right,
@@ -114,6 +115,128 @@
     width: 84vw !important; /* Make the icons half the viewport width */
     position: absolute;
   }
+
+  .icon_1_left, .icon_2_left, .icon_3_left, .icon_4_left, .icon_5_left, .icon_6_left, .icon_7_left, .icon_8_left,
+  .icon_9_left, .icon_10_left, .icon_11_left, .icon_12_left, .icon_13_left, .icon_14_left, .icon_15_left, .icon_16_left,
+  .text_1_left, .text_2_left, .text_3_left, .text_4_left, .text_5_left, .text_6_left, .text_7_left, .text_8_left,
+  .text_9_left, .text_10_left, .text_11_left, .text_12_left, .text_13_left, .text_14_left, .text_15_left, .text_16_left{
+    width: 84vw !important;
+    position: absolute;
+  }
+
+  .icon_1_left{
+    top: 192vh !important;
+  }
+  .text_1_left {
+    top: 230vh !important;
+    width: 70vw !important;
+    left: 14vw !important;
+  }
+
+  .icon_2_left{
+    top: 335vh !important;
+  }
+  .text_2_left {
+    top: 380vh !important;
+    width: 70vw !important;
+    left: 14vw !important;
+  }
+
+  .icon_3_left {
+    top: 767vh !important;
+    width: 80vw !important;
+    left: 15vw !important;
+  }
+  .text_3_left {
+    top: 793vh !important;
+    width: 75vw !important;
+    left: 19vw !important;
+  }
+  .icon_4_left {
+    top: 1135vh !important;
+    width: 80vw !important;
+  }
+  .text_4_left {
+    top: 1171vh !important;
+    width: 70vw !important;
+    left: 9vw !important;
+  }
+
+  .icon_5_left {
+    top: 1272vh !important;
+    width: 80vw !important;
+    left: 12vw !important;
+  }
+  .text_5_left {
+    top: 1330vh !important;
+    width: 70vw !important;
+    left:13vw !important;
+  }
+
+  .icon_6_left {
+    top: 1443vh !important;
+    width: 80vw !important;
+    left: 14vw !important;
+  }
+  .text_6_left {
+    top: 1485vh !important;
+    width: 70vw !important;
+    left: 19vw !important;
+  }
+
+  .icon_7_left {
+    top: 1610vh !important;
+    width: 85vw !important;
+    left: 11vw !important;
+  }
+  .text_7_left {
+    top: 1648vh !important;
+    width: 70vw !important;
+    left: 16vw !important;
+  }
+
+  .icon_8_left {
+    top: 1780vh !important;
+    left:10vw !important;
+  }
+  .text_8_left {
+    top: 1823vh !important;
+    width: 70vw !important;
+    left: 17vw !important;
+  }
+
+  .icon_9_left {
+    top: 1887vh  !important;
+    left: 10vw  !important;
+  }
+  .text_9_left {
+    top: 1937vh  !important;
+    width: 70vw  !important;
+    left: 17vw  !important;
+  }
+
+  .icon_10_left {
+    top: 2290vh !important;
+    left: 6vw !important;
+    width: 80vw !important;
+  }
+  .text_10_left {
+    top: 2336vh !important;
+    width: 70vw !important;
+    left: 11vw !important;
+  }
+
+  .icon_11_left {
+    top: 2645vh !important;
+    left:7vw !important;
+    width: 80vw !important;
+  }
+  .text_11_left {
+    top: 2678vh !important;
+    width: 70vw !important;
+    left: 14vw !important;
+  }
+
 }
 
 //ICONE_TESTI SINISTRA
