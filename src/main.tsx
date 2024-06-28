@@ -6,24 +6,32 @@ import './index.css';
 
 const RootComponent = () => {
     const [isPortrait, setIsPortrait] = useState(window.matchMedia("(orientation: portrait)").matches);
+    const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 768px)").matches);
 
     useEffect(() => {
-        const mediaQuery = window.matchMedia("(orientation: portrait)");
+        const orientationMediaQuery = window.matchMedia("(orientation: portrait)");
+        const mobileMediaQuery = window.matchMedia("(max-width: 768px)");
 
         const handleOrientationChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => {
             setIsPortrait(e.matches);
         };
 
-        mediaQuery.addEventListener('change', handleOrientationChange);
+        const handleMobileChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => {
+            setIsMobile(e.matches);
+        };
+
+        orientationMediaQuery.addEventListener('change', handleOrientationChange);
+        mobileMediaQuery.addEventListener('change', handleMobileChange);
 
         return () => {
-            mediaQuery.removeEventListener('change', handleOrientationChange);
+            orientationMediaQuery.removeEventListener('change', handleOrientationChange);
+            mobileMediaQuery.removeEventListener('change', handleMobileChange);
         };
     }, []);
 
     return (
         <React.StrictMode>
-            {isPortrait ? <App /> : <Notification />}
+            {isMobile && !isPortrait ? <Notification /> : <App />}
         </React.StrictMode>
     );
 };
