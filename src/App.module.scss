@@ -1388,34 +1388,22 @@
   width:90vw;
 }
 
-@media screen and (orientation: landscape) {
-  .portrait-only {
-    display: none;
-  }
-
-  .landscape-warning {
-    display: block;
-    text-align: center;
-    padding: 20px;
-  }
 }
 
-@media screen and (orientation: portrait) {
-  .portrait-only {
-    display: block;
-  }
+.content{}
 
-  .landscape-warning {
-    display: none;
-  }
+.hidden {
+  display: none;
 }
 
-.landscape-warning-icon {
-  display: block;
-  margin: 20px auto;
-  width: 50px; /* Adjust size as needed */
-  height: 50px; /* Adjust size as needed */
-  background: url('path/to/rotate-icon.png') no-repeat center center;
-  background-size: contain;
-}
+#rotate-warning {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border: 2px solid #000;
+  z-index: 1000;
 }

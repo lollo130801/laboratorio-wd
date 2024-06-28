@@ -247,31 +247,26 @@ function App() {
             });
         };
 
-        const isMobile = () => {
-            return /Mobi|Android/i.test(navigator.userAgent);
-        };
-        
-        const handleOrientationChange = () => {
-            if (!isMobile()) return; // Exit if not on a mobile device
-        
-            const portraitOnly = document.querySelector('.portrait-only') as HTMLElement;
-            const landscapeWarning = document.querySelector('.landscape-warning') as HTMLElement;
-        
-            if (portraitOnly && landscapeWarning) {
-                if (window.innerHeight > window.innerWidth) {
-                    portraitOnly.style.display = 'block';
-                    landscapeWarning.style.display = 'none';
-                } else {
-                    portraitOnly.style.display = 'none';
-                    landscapeWarning.style.display = 'block';
+        window.addEventListener('orientationchange', handleOrientationChange);
+
+        function handleOrientationChange() {
+            const content = document.getElementById('content');
+            const rotateWarning = document.getElementById('rotate-warning');
+            if (window.orientation === 90 || window.orientation === -90) {
+                if (content && rotateWarning) {
+                    content.style.display = 'none';
+                    rotateWarning.classList.remove('hidden');
+                }
+            } else {
+                if (content && rotateWarning) {
+                    content.style.display = '';
+                    rotateWarning.classList.add('hidden');
                 }
             }
-        };
-        
-        // Attach the event listeners
-        window.addEventListener('resize', handleOrientationChange);
-        window.addEventListener('orientationchange', handleOrientationChange);
-        handleOrientationChange();
+        }
+
+        // Initial check in case the script is loaded in an already rotated state
+        document.addEventListener('DOMContentLoaded', handleOrientationChange);
 
         window.addEventListener('scroll', handleScroll);
         handleScroll(); // Call the function once on initial render
@@ -283,7 +278,7 @@ function App() {
 
     return (
         <div className={styles.App}>
-            <div className="portrait-only">
+            <div id="content">
                 <img src={bg1} alt="" className={styles.bg_1} />
                 <img src={bg2} alt="" className={styles.bg_1} />
                 <img src={bg3} alt="" className={styles.bg_1} />
@@ -444,11 +439,11 @@ function App() {
                 <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
                 <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
                 </div>
-            </div>
-            <div className="landscape-warning">
-                <div className="landscape-warning-icon"></div>
-                <p>Please rotate your device to portrait mode.</p>
-            </div>
+                </div>
+
+                <div id="rotate-warning" className="hidden">
+                    <h2>Please rotate your device back to portrait mode.</h2>
+                </div>
         </div>
     );
 }
