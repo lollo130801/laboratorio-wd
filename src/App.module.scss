@@ -1392,3 +1392,24 @@
 
 
 }
+
+@media screen and (orientation: landscape) {
+  .portrait-only {
+    display: none;
+  }
+  
+  .landscape-warning {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/* Default layout for portrait mode */
+.portrait-only {
+  display: block;
+}
+
+.landscape-warning {
+  display: none;
+}

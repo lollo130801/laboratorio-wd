@@ -245,9 +245,25 @@ function App() {
                     }
                 }
             });
-
         };
 
+        const handleOrientationChange = () => {
+            const portraitOnly = document.querySelector('.portrait-only') as HTMLElement;
+            const landscapeWarning = document.querySelector('.landscape-warning') as HTMLElement;
+            
+            if (portraitOnly && landscapeWarning) {
+                if (window.innerHeight > window.innerWidth) {
+                    portraitOnly.style.display = 'block';
+                    landscapeWarning.style.display = 'none';
+                } else {
+                    portraitOnly.style.display = 'none';
+                    landscapeWarning.style.display = 'block';
+                }
+            }
+        };
+        handleOrientationChange();
+
+        window.addEventListener('resize', handleOrientationChange);
         window.addEventListener('scroll', handleScroll);
         handleScroll(); // Call the function once on initial render
 
@@ -258,166 +274,170 @@ function App() {
 
     return (
         <div className={styles.App}>
+            <div className="portrait-only">
+                <img src={bg1} alt="" className={styles.bg_1} />
+                <img src={bg2} alt="" className={styles.bg_1} />
+                <img src={bg3} alt="" className={styles.bg_1} />
+                <img src={bg4} alt="" className={styles.bg_1} />
+                <img src={bg5} alt="" className={styles.bg_2} />
 
-            <img src={bg1} alt="" className={styles.bg_1} />
-            <img src={bg2} alt="" className={styles.bg_1} />
-            <img src={bg3} alt="" className={styles.bg_1} />
-            <img src={bg4} alt="" className={styles.bg_1} />
-            <img src={bg5} alt="" className={styles.bg_2} />
+                <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)} />
+                <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)} />
+                <img ref={nuvolaAhmedRef} src={nuvolaAhmed} alt="Nuvola Ahmed" className={styles.nuvolaAhmed} />
+                <img ref={nuvolaMattiaRef} src={nuvolaMattia} alt="Nuvola Mattia" className={styles.nuvolaMattia} />
 
-            <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)} />
-            <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)} />
-            <img ref={nuvolaAhmedRef} src={nuvolaAhmed} alt="Nuvola Ahmed" className={styles.nuvolaAhmed} />
-            <img ref={nuvolaMattiaRef} src={nuvolaMattia} alt="Nuvola Mattia" className={styles.nuvolaMattia} />
+                <div className={styles.icon_text_container_left_1}>            
+                    <img ref={mattia1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_left} />
+                    <img ref={mattiatext1Ref} src={txtMattia1Svg} alt="" className={styles.text_1_left} />
+                </div>
+                
+                <div className={styles.icon_text_container_left_2}>              
+                <img ref={mattia2Ref} src={Mattia2Svg0} alt="" className={styles.icon_2_left} />
+                <img ref={mattiatext2Ref} src={txtMattia2Svg} alt="" className={styles.text_2_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_1}>            
-                <img ref={mattia1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_left} />
-                <img ref={mattiatext1Ref} src={txtMattia1Svg} alt="" className={styles.text_1_left} />
-            </div>
-            
-            <div className={styles.icon_text_container_left_2}>              
-            <img ref={mattia2Ref} src={Mattia2Svg0} alt="" className={styles.icon_2_left} />
-            <img ref={mattiatext2Ref} src={txtMattia2Svg} alt="" className={styles.text_2_left} />
-            </div>
+                <div className={styles.icon_text_container_left_3}>
+                <img ref={mattia3Ref} src={Mattia3Svg0} alt="" className={styles.icon_3_left} />
+                <img ref={mattiatext3Ref} src={txtMattia3Svg} alt="" className={styles.text_3_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_3}>
-            <img ref={mattia3Ref} src={Mattia3Svg0} alt="" className={styles.icon_3_left} />
-            <img ref={mattiatext3Ref} src={txtMattia3Svg} alt="" className={styles.text_3_left} />
-            </div>
+                <div className={styles.icon_text_container_left_4}>
+                <img ref={mattia4Ref} src={Mattia4Svg0} alt="" className={styles.icon_4_left} />
+                <img ref={mattiatext4Ref} src={txtMattia4Svg} alt="" className={styles.text_4_left} />
+                </div>
+                
+                <div className={styles.icon_text_container_left_5}>
+                <img ref={mattia5Ref} src={Mattia5Svg0} alt="" className={styles.icon_5_left} />
+                <img ref={mattiatext5Ref} src={txtMattia5Svg} alt="" className={styles.text_5_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_4}>
-            <img ref={mattia4Ref} src={Mattia4Svg0} alt="" className={styles.icon_4_left} />
-            <img ref={mattiatext4Ref} src={txtMattia4Svg} alt="" className={styles.text_4_left} />
-            </div>
-            
-            <div className={styles.icon_text_container_left_5}>
-            <img ref={mattia5Ref} src={Mattia5Svg0} alt="" className={styles.icon_5_left} />
-            <img ref={mattiatext5Ref} src={txtMattia5Svg} alt="" className={styles.text_5_left} />
-            </div>
+                <div className={styles.icon_text_container_left_6}>
+                <img ref={mattia6Ref} src={Mattia6Svg0} alt="" className={styles.icon_6_left} />
+                <img ref={mattiatext6Ref} src={txtMattia6Svg} alt="" className={styles.text_6_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_6}>
-            <img ref={mattia6Ref} src={Mattia6Svg0} alt="" className={styles.icon_6_left} />
-            <img ref={mattiatext6Ref} src={txtMattia6Svg} alt="" className={styles.text_6_left} />
-            </div>
+                <div className={styles.icon_text_container_left_7}>
+                <img ref={mattia7Ref} src={Mattia7Svg0} alt="" className={styles.icon_7_left} />
+                <img ref={mattiatext7Ref} src={txtMattia7Svg} alt="" className={styles.text_7_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_7}>
-            <img ref={mattia7Ref} src={Mattia7Svg0} alt="" className={styles.icon_7_left} />
-            <img ref={mattiatext7Ref} src={txtMattia7Svg} alt="" className={styles.text_7_left} />
-            </div>
+                <div className={styles.icon_text_container_left_8}>
+                <img ref={mattia8Ref} src={Mattia8Svg0} alt="" className={styles.icon_8_left} />
+                <img ref={mattiatext8Ref} src={txtMattia8Svg} alt="" className={styles.text_8_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_8}>
-            <img ref={mattia8Ref} src={Mattia8Svg0} alt="" className={styles.icon_8_left} />
-            <img ref={mattiatext8Ref} src={txtMattia8Svg} alt="" className={styles.text_8_left} />
-            </div>
+                <div className={styles.icon_text_container_left_9}>
+                <img ref={mattia9Ref} src={Mattia9Svg0} alt="" className={styles.icon_9_left} />
+                <img ref={mattiatext9Ref} src={txtMattia9Svg} alt="" className={styles.text_9_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_9}>
-            <img ref={mattia9Ref} src={Mattia9Svg0} alt="" className={styles.icon_9_left} />
-            <img ref={mattiatext9Ref} src={txtMattia9Svg} alt="" className={styles.text_9_left} />
-            </div>
+                <div className={styles.icon_text_container_left_10}>
+                <img ref={mattia10Ref} src={Mattia10Svg0} alt="" className={styles.icon_10_left} />
+                <img ref={mattiatext10Ref} src={txtMattia10Svg} alt="" className={styles.text_10_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_10}>
-            <img ref={mattia10Ref} src={Mattia10Svg0} alt="" className={styles.icon_10_left} />
-            <img ref={mattiatext10Ref} src={txtMattia10Svg} alt="" className={styles.text_10_left} />
-            </div>
+                <div className={styles.icon_text_container_left_11}>
+                <img ref={mattia11Ref} src={Mattia11Svg0} alt="" className={styles.icon_11_left} />
+                <img ref={mattiatext11Ref} src={txtMattia11Svg} alt="" className={styles.text_11_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_11}>
-            <img ref={mattia11Ref} src={Mattia11Svg0} alt="" className={styles.icon_11_left} />
-            <img ref={mattiatext11Ref} src={txtMattia11Svg} alt="" className={styles.text_11_left} />
-            </div>
+                <div className={styles.icon_text_container_left_12}>
+                <img ref={mattia12Ref} src={Mattia12Svg0} alt="" className={styles.icon_12_left} />
+                <img ref={mattiatext12Ref} src={txtMattia12Svg} alt="" className={styles.text_12_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_12}>
-            <img ref={mattia12Ref} src={Mattia12Svg0} alt="" className={styles.icon_12_left} />
-            <img ref={mattiatext12Ref} src={txtMattia12Svg} alt="" className={styles.text_12_left} />
-            </div>
+                <div className={styles.icon_text_container_left_13}>
+                <img ref={mattia13Ref} src={Mattia13Svg0} alt="" className={styles.icon_13_left} />
+                <img ref={mattiatext13Ref} src={txtMattia13Svg} alt="" className={styles.text_13_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_13}>
-            <img ref={mattia13Ref} src={Mattia13Svg0} alt="" className={styles.icon_13_left} />
-            <img ref={mattiatext13Ref} src={txtMattia13Svg} alt="" className={styles.text_13_left} />
-            </div>
+                <div className={styles.icon_text_container_left_14}>
+                <img ref={mattia14Ref} src={Mattia14Svg0} alt="" className={styles.icon_14_left} />
+                <img ref={mattiatext14Ref} src={txtMattia14Svg} alt="" className={styles.text_14_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_14}>
-            <img ref={mattia14Ref} src={Mattia14Svg0} alt="" className={styles.icon_14_left} />
-            <img ref={mattiatext14Ref} src={txtMattia14Svg} alt="" className={styles.text_14_left} />
-            </div>
+                <div className={styles.icon_text_container_left_15}>
+                <img ref={mattia15Ref} src={Mattia15Svg0} alt="" className={styles.icon_15_left} />
+                <img ref={mattiatext15Ref} src={txtMattia15Svg} alt="" className={styles.text_15_left} />
+                </div>
 
-            <div className={styles.icon_text_container_left_15}>
-            <img ref={mattia15Ref} src={Mattia15Svg0} alt="" className={styles.icon_15_left} />
-            <img ref={mattiatext15Ref} src={txtMattia15Svg} alt="" className={styles.text_15_left} />
-            </div>
+                <div className={styles.icon_text_container_left_16}>
+                <img ref={mattia16Ref} src={Mattia16Svg0} alt="" className={styles.icon_16_left} />
+                <img ref={mattiatext16Ref} src={txtMattia16Svg} alt="" className={styles.text_16_left} />
+                </div>
+                
+                <div className={styles.icon_text_container_right_1}>
+                <img ref={Ahmed1Ref} src={Ahmed1Svg0} alt="" className={styles.icon_1_right} />
+                <img ref={AhmedText1Ref} src={txtAhmed1Svg} alt="" className={styles.text_1_right} />
+                </div>
 
-            <div className={styles.icon_text_container_left_16}>
-            <img ref={mattia16Ref} src={Mattia16Svg0} alt="" className={styles.icon_16_left} />
-            <img ref={mattiatext16Ref} src={txtMattia16Svg} alt="" className={styles.text_16_left} />
-            </div>
-            
-            <div className={styles.icon_text_container_right_1}>
-            <img ref={Ahmed1Ref} src={Ahmed1Svg0} alt="" className={styles.icon_1_right} />
-            <img ref={AhmedText1Ref} src={txtAhmed1Svg} alt="" className={styles.text_1_right} />
-            </div>
+                <div className={styles.icon_text_container_right_2}>
+                <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="" className={styles.icon_2_right} />
+                <img ref={AhmedText2Ref} src={txtAhmed2Svg} alt="" className={styles.text_2_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_2}>
-            <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="" className={styles.icon_2_right} />
-            <img ref={AhmedText2Ref} src={txtAhmed2Svg} alt="" className={styles.text_2_right} />
-            </div>
+                <div className={styles.icon_text_container_right_3}>
+                <img ref={Ahmed3Ref} src={Ahmed3Svg0} alt="" className={styles.icon_3_right} />
+                <img ref={AhmedText3Ref} src={txtAhmed3Svg} alt="" className={styles.text_3_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_3}>
-            <img ref={Ahmed3Ref} src={Ahmed3Svg0} alt="" className={styles.icon_3_right} />
-            <img ref={AhmedText3Ref} src={txtAhmed3Svg} alt="" className={styles.text_3_right} />
-            </div>
+                <div className={styles.icon_text_container_right_4}>
+                <img ref={Ahmed4Ref} src={Ahmed4Svg0} alt="" className={styles.icon_4_right} />
+                <img ref={AhmedText4Ref} src={txtAhmed4Svg} alt="" className={styles.text_4_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_4}>
-            <img ref={Ahmed4Ref} src={Ahmed4Svg0} alt="" className={styles.icon_4_right} />
-            <img ref={AhmedText4Ref} src={txtAhmed4Svg} alt="" className={styles.text_4_right} />
-            </div>
+                <div className={styles.icon_text_container_right_5}>
+                <img ref={Ahmed5Ref} src={Ahmed5Svg0} alt="" className={styles.icon_5_right} />
+                <img ref={AhmedText5Ref} src={txtAhmed5Svg} alt="" className={styles.text_5_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_5}>
-            <img ref={Ahmed5Ref} src={Ahmed5Svg0} alt="" className={styles.icon_5_right} />
-            <img ref={AhmedText5Ref} src={txtAhmed5Svg} alt="" className={styles.text_5_right} />
-            </div>
+                <div className={styles.icon_text_container_right_6}>
+                <img ref={Ahmed6Ref} src={Ahmed6Svg0} alt="" className={styles.icon_6_right} />
+                <img ref={AhmedText6Ref} src={txtAhmed6Svg} alt="" className={styles.text_6_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_6}>
-            <img ref={Ahmed6Ref} src={Ahmed6Svg0} alt="" className={styles.icon_6_right} />
-            <img ref={AhmedText6Ref} src={txtAhmed6Svg} alt="" className={styles.text_6_right} />
-            </div>
+                <div className={styles.icon_text_container_right_7}>
+                <img ref={Ahmed7Ref} src={Ahmed7Svg0} alt="" className={styles.icon_7_right} />
+                <img ref={AhmedText7Ref} src={txtAhmed7Svg} alt="" className={styles.text_7_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_7}>
-            <img ref={Ahmed7Ref} src={Ahmed7Svg0} alt="" className={styles.icon_7_right} />
-            <img ref={AhmedText7Ref} src={txtAhmed7Svg} alt="" className={styles.text_7_right} />
-            </div>
+                <div className={styles.icon_text_container_right_8}>
+                <img ref={Ahmed8Ref} src={Ahmed8Svg0} alt="" className={styles.icon_8_right} />
+                <img ref={AhmedText8Ref} src={txtAhmed8Svg} alt="" className={styles.text_8_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_8}>
-            <img ref={Ahmed8Ref} src={Ahmed8Svg0} alt="" className={styles.icon_8_right} />
-            <img ref={AhmedText8Ref} src={txtAhmed8Svg} alt="" className={styles.text_8_right} />
-            </div>
+                <div className={styles.icon_text_container_right_9}>
+                <img ref={Ahmed9Ref} src={Ahmed9Svg0} alt="" className={styles.icon_9_right} />
+                <img ref={AhmedText9Ref} src={txtAhmed9Svg} alt="" className={styles.text_9_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_9}>
-            <img ref={Ahmed9Ref} src={Ahmed9Svg0} alt="" className={styles.icon_9_right} />
-            <img ref={AhmedText9Ref} src={txtAhmed9Svg} alt="" className={styles.text_9_right} />
-            </div>
+                <div className={styles.icon_text_container_right_10}>
+                <img ref={Ahmed10Ref} src={Ahmed10Svg0} alt="" className={styles.icon_10_right} />
+                <img ref={AhmedText10Ref} src={txtAhmed10Svg} alt="" className={styles.text_10_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_10}>
-            <img ref={Ahmed10Ref} src={Ahmed10Svg0} alt="" className={styles.icon_10_right} />
-            <img ref={AhmedText10Ref} src={txtAhmed10Svg} alt="" className={styles.text_10_right} />
-            </div>
+                <div className={styles.icon_text_container_right_11}>
+                <img ref={Ahmed11Ref} src={Ahmed11Svg0} alt="" className={styles.icon_11_right} />
+                <img ref={AhmedText11Ref} src={txtAhmed11Svg} alt="" className={styles.text_11_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_11}>
-            <img ref={Ahmed11Ref} src={Ahmed11Svg0} alt="" className={styles.icon_11_right} />
-            <img ref={AhmedText11Ref} src={txtAhmed11Svg} alt="" className={styles.text_11_right} />
-            </div>
+                <div className={styles.icon_text_container_right_12}>
+                <img ref={Ahmed12Ref} src={Ahmed12Svg0} alt="" className={styles.icon_12_right} />
+                <img ref={AhmedText12Ref} src={txtAhmed12Svg} alt="" className={styles.text_12_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_12}>
-            <img ref={Ahmed12Ref} src={Ahmed12Svg0} alt="" className={styles.icon_12_right} />
-            <img ref={AhmedText12Ref} src={txtAhmed12Svg} alt="" className={styles.text_12_right} />
-            </div>
+                <div className={styles.icon_text_container_right_13}>
+                <img ref={Ahmed13Ref} src={Ahmed13Svg0} alt="" className={styles.icon_13_right} />
+                <img ref={AhmedText13Ref} src={txtAhmed13Svg} alt="" className={styles.text_13_right} />
+                </div>
 
-            <div className={styles.icon_text_container_right_13}>
-            <img ref={Ahmed13Ref} src={Ahmed13Svg0} alt="" className={styles.icon_13_right} />
-            <img ref={AhmedText13Ref} src={txtAhmed13Svg} alt="" className={styles.text_13_right} />
+                <div className={styles.icon_text_container_right_14}>
+                <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
+                <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
+                </div>
             </div>
-
-            <div className={styles.icon_text_container_right_14}>
-            <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
-            <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
+            <div className="landscape-warning">
+                <h1>Please rotate your device to portrait mode.</h1>
             </div>
         </div>
     );
