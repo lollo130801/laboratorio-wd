@@ -14,13 +14,29 @@
   z-index: 1;
 }
 
+/*CLASSI PER NOTIFICA ROTAZIONE SCHERMO*/
+.notification_div{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:rgb(249, 235, 197);
+}
+
+.notification_text{
+  top:40%;
+  left: 25%;
+  position: relative;
+  color: rgb(132, 107, 74);
+  font-size: 1.5em;
+  font-weight: 700;
+}
 
 /*CLASSI IMMAGINI HEADER*/
 .titolo{
   position: absolute;
   height: 35vh;
   top: 35vh;
-  right: 50vh;
+  right: 30vw;
   z-index: 3;
 }
 
@@ -28,7 +44,7 @@
   position: absolute;
   height: 35vh;
   top: 35vh;
-  right: 25vh;
+  right: 15vw;
   z-index: 2;
 }
 
