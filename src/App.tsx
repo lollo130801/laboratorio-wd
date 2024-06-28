@@ -247,10 +247,16 @@ function App() {
             });
         };
 
+        const isMobile = () => {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        };
+        
         const handleOrientationChange = () => {
+            if (!isMobile()) return; // Exit if not on a mobile device
+        
             const portraitOnly = document.querySelector('.portrait-only') as HTMLElement;
             const landscapeWarning = document.querySelector('.landscape-warning') as HTMLElement;
-            
+        
             if (portraitOnly && landscapeWarning) {
                 if (window.innerHeight > window.innerWidth) {
                     portraitOnly.style.display = 'block';
@@ -261,9 +267,12 @@ function App() {
                 }
             }
         };
+        
+        // Attach the event listeners
+        window.addEventListener('resize', handleOrientationChange);
+        window.addEventListener('orientationchange', handleOrientationChange);
         handleOrientationChange();
 
-        window.addEventListener('resize', handleOrientationChange);
         window.addEventListener('scroll', handleScroll);
         handleScroll(); // Call the function once on initial render
 
@@ -437,7 +446,8 @@ function App() {
                 </div>
             </div>
             <div className="landscape-warning">
-                <h1>Please rotate your device to portrait mode.</h1>
+                <div className="landscape-warning-icon"></div>
+                <p>Please rotate your device to portrait mode.</p>
             </div>
         </div>
     );

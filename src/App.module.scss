@@ -1388,16 +1388,11 @@
   width:90vw;
 }
 
-
-
-
-}
-
 @media screen and (orientation: landscape) {
   .portrait-only {
     display: none;
   }
-  
+
   .landscape-warning {
     display: block;
     text-align: center;
@@ -1405,11 +1400,22 @@
   }
 }
 
-/* Default layout for portrait mode */
-.portrait-only {
-  display: block;
+@media screen and (orientation: portrait) {
+  .portrait-only {
+    display: block;
+  }
+
+  .landscape-warning {
+    display: none;
+  }
 }
 
-.landscape-warning {
-  display: none;
+.landscape-warning-icon {
+  display: block;
+  margin: 20px auto;
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  background: url('path/to/rotate-icon.png') no-repeat center center;
+  background-size: contain;
+}
 }
