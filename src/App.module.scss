@@ -66,22 +66,21 @@
 
 
 
-
-/*CLASSI PER MOBILE 1200PX*/
 /*CLASSI PER MOBILE 1200PX*/
 @media screen and (min-width: 600px) and (max-width: 1200px) {
+
   .titolo{
     position: absolute;
-    height: 25vh;
-    top: 30vh;
-    right: 40vh
+    height: 40vw !important;
+    top: 57vw !important;
+    right: 116vw !important
   }
   
   .nuvoleTitolo{
     position: absolute;
     height: 25vh;
-    top: 30vh;
-    right: 18vh;
+    top: 63vw;
+    right: 100vw;
   }
 
   .nuvolaAhmed{
@@ -107,8 +106,8 @@
   }
 
   .App {
-    width: 200vw !important; /* Make the app's width twice the viewport width */
-    height: 6970vw !important;
+    width: 300vw !important; /* Make the app's width twice the viewport width */
+    height: 8644vw !important;
   }
 
   //icone e testi di destra
@@ -122,147 +121,133 @@
   }
 
   .icon_text_container_right_1{
-    top:196vh !important;
-    right:55vw !important;
+    top:360vw !important;
+    right:75vw !important;
   }
   .text_1_right{
-    margin-top:33vh !important;
+    margin-top:40vh !important;
     width:70vw !important;
   }
 
   .icon_text_container_right_2{
-    top:336vh !important;
-    right:50vw !important;
+    top:596vw !important;
+    right:64vw !important;
   }
   .text_2_right{
-    margin-top:46vh !important;
+    margin-top:56vh !important;
     width:70vw !important;
   }
 
   .icon_text_container_right_3{
-    top:507vh !important;
-    right:50vw !important;
+    top:907vw !important;
+    right:80vw !important;
   }
   .icon_3_right{
-    width: 60vw !important;
+    width: 70vw !important;
   }
   .text_3_right{
-    margin-top:46vh !important;
+    margin-top:57vh !important;
     width:55vw !important;
   }
 
 
   .icon_text_container_right_4{
-    top:595vh !important;
-    right:50vw !important;
+    top:1075vw !important;
+    right:70vw !important;
   }
   .text_4_right{
-    margin-top:46vh !important;
+    margin-top:56vh !important;
     width:70vw !important;
   }
 
   .icon_text_container_right_5{
-    top:1022vh !important;
-    right:50vw !important;
+    top:1820vw !important;
+    right:100vw !important;
   }
   .text_5_right{
-    margin-top:43vh !important;
+    margin-top:50vh !important;
     width:70vw !important;
   }
 
   .icon_text_container_right_6{
-    top:2081vh !important;
-    right:50vw !important;
+    top:3641vw !important;
+    right:80vw !important;
   }
   .text_6_right{
-    margin-top:57vh !important;
+    margin-top:63vh !important;
     width:70vw !important;
   }
 
   .icon_text_container_right_7{
-    top:2629vh !important;
-    right:50vw !important;
+    top:4659vw !important;
+    right:60vw !important;
   }
   .text_7_right{
+    margin-top:67vh !important;
+    width:70vw !important;
+  }
+
+  .icon_text_container_right_8{
+    top:5393vw !important;
+    right:80vw !important;
+  }
+  .text_8_right{
     margin-top:57vh !important;
     width:70vw !important;
   }
 
-  .icon_8_right{
-    top:3045vh !important;
-    right:8vw !important;
-    width:80vw !important;
-  }
-  .text_8_right{
-    top:3090vh !important;
-    right:13vw !important;
-    width:70vw !important;
-  }
-
-  .icon_9_right{
-    top:3138vh !important;
-    right:5vw !important;
-    width:80vw !important;
+  .icon_text_container_right_9{
+    top:5560vw !important;
+    right:80vw !important;
   }
   .text_9_right{
-    top:3178vh !important;
-    right:13vw !important;
+    margin-top:51vh !important;
     width:70vw !important;
   }
 
-  .icon_10_right{
-    top:3308vh !important;
-    right:13vw !important;
-    width:80vw !important;
+  .icon_text_container_right_10{
+    top:5870vw !important;
+    right:80vw !important;
   }
   .text_10_right{
-    top:3343vh !important;
-    right:20vw !important;
+    margin-top:40vh !important;
     width:70vw !important;
   }
 
-  .icon_11_right{
-    top:3765vh !important;
-    right:5vw !important;
-    width:65vw !important;
+  .icon_text_container_right_11{
+    top:6670vw !important;
+    right:73vw !important;
   }
   .text_11_right{
-    top:3819vh !important;
-    right:5vw !important;
+    margin-top:77vh !important;
     width:70vw !important;
   }
 
-  .icon_12_right{
-    top:3910vh !important;
-    right:5vw !important;
-    width:70vw !important;
+  .icon_text_container_right_12{
+    top:6940vw !important;
+    right:73vw !important;
   }
   .text_12_right{
-    top:3963vh !important;
-    right:15vw !important;
-    width:60vw !important;
+    margin-top:70vh !important;
+    width:70vw !important;
   }
 
-  .icon_13_right{
-    top:4240vh !important;
-    right:10vw !important;
-    width:60vw !important;
+  .icon_text_container_right_13{
+    top:7510vw !important;
+    right:73vw !important;
   }
   .text_13_right{
-    top:4290vh !important;
-    right:10vw !important;
-    width:60vw !important;
+    margin-top:80vh !important;
+    width:70vw !important;
   }
 
-  .icon_14_right{
-    top:4490vh !important;
-    right:8vw !important;
-    width:60vw !important;
+  .icon_text_container_right_14{
+    top:8000vw !important;
+    right:63vw !important;
   }
   .text_14_right{
-    top:4530vh !important;
-    right:8vw !important;
-    width:69vw !important;
+    margin-top:60vh !important;
+    width:70vw !important;
   }
 
   //icone e testi di sinistra
@@ -276,56 +261,56 @@
   }
 
   .icon_text_container_left_1{
-    top:192vh !important;
-    left:45vw !important;
+    top:360vw !important;
+    left:78vw !important;
   }
   .icon_1_left{
     width: 80vw;
   }
   .text_1_left {
-    margin-top: 36vh !important;
+    margin-top: 40vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_2{
-    top: 332vh !important;
-    left: 47vw !important;
+    top: 600vw !important;
+    left: 77vw !important;
   }
   .text_2_left {
-    margin-top: 46vh !important;
+    margin-top: 55vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_3{
-    top: 767vh !important;
-    left: 47vw !important;
+    top: 1360vw !important;
+    left: 77vw !important;
   }
   .text_3_left {
-    margin-top: 26vh !important;
+    margin-top: 33vh !important;
     width: 75vw !important;
   }
 
   .icon_text_container_left_4{
-    top: 1135vh !important;
-    left: 47vw !important;
+    top: 2020vw !important;
+    left: 67vw !important;
   }
   .text_4_left {
-    margin-top: 38vh !important;
+    margin-top: 44vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_5{
-    top: 1272vh !important;
-    left: 47vw !important;
+    top: 2267vw !important;
+    left: 77vw !important;
   }
   .text_5_left {
-    margin-top: 60vh !important;
+    margin-top: 70vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_6{
-    top: 1433vh !important;
-    left: 47vw !important;
+    top: 2573vw !important;
+    left: 62vw !important;
   }
   .text_6_left {
     margin-top: 44vh !important;
@@ -333,92 +318,92 @@
   }
 
   .icon_text_container_left_7{
-    top: 1610vh !important;
-    left: 47vw !important;
+    top: 2866vw !important;
+    left: 77vw !important;
   }
   .text_7_left {
-    margin-top: 39vh !important;
-    width: 70vw !important;
-  }
-
-  .icon_text_container_left_8{
-    top: 1780vh !important;
-    left: 49vw !important;
-  }
-  .text_8_left {
     margin-top: 43vh !important;
     width: 70vw !important;
   }
 
+  .icon_text_container_left_8{
+    top: 3170vw !important;
+    left: 69vw !important;
+  }
+  .text_8_left {
+    margin-top: 49vh !important;
+    width: 70vw !important;
+  }
+
   .icon_text_container_left_9{
-    top: 1890vh !important;
-    left: 65vw !important;
+    top: 3350vw !important;
+    left: 95vw !important;
   }
   .text_9_left {
-    margin-top: 49vh !important;
+    margin-top: 56vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_10{
-    top: 2290vh !important;
-    left: 50vw !important;
+    top: 4060vw !important;
+    left: 70vw !important;
   }
   .text_10_left {
-    margin-top: 49vh !important;
+    margin-top: 55vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_11{
-    top: 2645vh !important;
-    left: 50vw !important;
+    top: 4700vw !important;
+    left: 74vw !important;
   }
   .text_11_left {
-    margin-top: 33vh !important;
+    margin-top: 37vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_12{
-    top: 2772vh !important;
-    left: 61vw !important;
+    top: 4920vw !important;
+    left: 71vw !important;
   }
   .text_12_left {
-    margin-top: 53vh !important;
+    margin-top: 63vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_13{
-    top: 2964vh !important;
-    left: 45vw !important;
+    top: 5254vw !important;
+    left: 75vw !important;
   }
   .text_13_left {
-    margin-top: 51vh !important;
+    margin-top: 61vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_14{
-    top: 3475vh !important;
-    left: 61vw !important;
+    top: 6180vw !important;
+    left: 73vw !important;
   }
   .text_14_left {
-    margin-top: 67vh !important;
+    margin-top: 75vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_15{
-    top: 3738vh !important;
-    left: 61vw !important;
+    top: 6628vw !important;
+    left: 91vw !important;
   }
   .text_15_left {
-    margin-top: 50vh !important;
+    margin-top: 60vh !important;
     width: 70vw !important;
   }
 
   .icon_text_container_left_16{
-    top: 3990vh !important;
+    top: 7080vw !important;
     left: 61vw !important;
   }
   .text_16_left {
-    margin-top: 50vh !important;
+    margin-top: 55vh !important;
     width: 70vw !important;
   }
 
