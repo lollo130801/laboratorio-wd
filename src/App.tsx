@@ -247,29 +247,8 @@ function App() {
             });
         };
 
-        window.addEventListener('orientationchange', handleOrientationChange);
-
-        function handleOrientationChange() {
-            const content = document.getElementById('content');
-            const rotateWarning = document.getElementById('rotate-warning');
-            if (window.orientation === 90 || window.orientation === -90) {
-                if (content && rotateWarning) {
-                    content.style.display = 'none';
-                    rotateWarning.classList.remove('hidden');
-                }
-            } else {
-                if (content && rotateWarning) {
-                    content.style.display = '';
-                    rotateWarning.classList.add('hidden');
-                }
-            }
-        }
-
-        // Initial check in case the script is loaded in an already rotated state
-        document.addEventListener('DOMContentLoaded', handleOrientationChange);
-
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Call the function once on initial render
+        handleScroll();
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
@@ -278,7 +257,6 @@ function App() {
 
     return (
         <div className={styles.App}>
-            <div id="content">
                 <img src={bg1} alt="" className={styles.bg_1} />
                 <img src={bg2} alt="" className={styles.bg_1} />
                 <img src={bg3} alt="" className={styles.bg_1} />
@@ -438,11 +416,6 @@ function App() {
                 <div className={styles.icon_text_container_right_14}>
                 <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
                 <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
-                </div>
-                </div>
-
-                <div id="rotate-warning" className="hidden">
-                    <h2>Please rotate your device back to portrait mode.</h2>
                 </div>
         </div>
     );
