@@ -616,6 +616,13 @@
 
 
 @media screen and (max-width: 1000px) {
+  .bg_1{
+    height: 1500vw !important;
+  }
+  .bg_2{
+    height: 650vw !important;
+  }
+
   .App {
     width: 200vw !important; /* Make the app's width twice the viewport width */
     height: 6970vw !important;
@@ -668,7 +675,7 @@
 }
 
 .icon_text_container_left_1{
-  top:280vw;
+  top:240vw;
   left:5vw;
 }
 .icon_1_left {
@@ -680,7 +687,7 @@
 }
 
 .icon_text_container_left_2{
-  top:470vw;
+  top:450vw;
   left: 5vw;
 }
 .icon_2_left {
@@ -692,7 +699,7 @@
 }
 
 .icon_text_container_left_3{
-  top: 1100vw;
+  top: 1040vw;
   left:5vw;
 }
 .icon_3_left {
@@ -704,7 +711,7 @@
 }
 
 .icon_text_container_left_4{
-  top: 1640vw;
+  top: 1540vw;
   left:6vw;
 }
 .icon_4_left {
@@ -716,7 +723,7 @@
 }
 
 .icon_text_container_left_5{
-  top: 1840vw;
+  top: 1730vw;
   left:6vw;
 }
 .icon_5_left {
@@ -729,7 +736,7 @@
 }
 
 .icon_text_container_left_6{
-  top:2070vw;
+  top:1970vw;
   left:6vw;
 }
 .icon_6_left {
@@ -741,7 +748,7 @@
 }
 
 .icon_text_container_left_7{
-  top: 2320vw;
+  top: 2190vw;
   left:6vw;
 }
 .icon_7_left {
@@ -753,7 +760,7 @@
 }
 
 .icon_text_container_left_8{
-  top: 2560vw;
+  top: 2430vw;
   left:6vw;
 }
 .icon_8_left {
@@ -765,7 +772,7 @@
 }
 
 .icon_text_container_left_9{
-  top: 2720vw;
+  top: 2550vw;
   left:6vw;
 }
 .icon_9_left {
@@ -777,7 +784,7 @@
 }
 
 .icon_text_container_left_10{
-  top: 3300vw;
+  top: 3120vw;
   left:6vw;
 }
 .icon_10_left {
@@ -789,7 +796,7 @@
 }
 
 .icon_text_container_left_11{
-  top: 3810vw;
+  top: 3599vw;
   left:6vw;
 }
 .icon_11_left {
@@ -801,7 +808,7 @@
 }
 
 .icon_text_container_left_12{
-  top: 4000vw;
+  top: 3750vw;
   left:6vw;
 }
 .icon_12_left {
@@ -813,7 +820,7 @@
 }
 
 .icon_text_container_left_13{
-  top: 4270vw;
+  top: 4010vw;
   left:6vw;
 }
 
@@ -826,7 +833,7 @@
 }
 
 .icon_text_container_left_14{
-  top: 5010vw;
+  top: 4710vw;
   left:6vw;
 }
 .icon_14_left {
@@ -838,7 +845,7 @@
 }
 
 .icon_text_container_left_15{
-  top: 5380vw;
+  top: 5080vw;
   left:6vw;
 }
 .icon_15_left {
@@ -850,7 +857,7 @@
 }
 
 .icon_text_container_left_16{
-  top: 5750vw;
+  top: 5420vw;
   left:6vw;
 }
 .icon_16_left {
@@ -878,7 +885,7 @@
 }
 
 .icon_text_container_right_1{
-  top:280vw;
+  top:240vw;
   right: 6vw;
 }
 .icon_1_right{
@@ -902,7 +909,7 @@
 }
 
 .icon_text_container_right_3{
-  top:700vw;
+  top:670vw;
   right:8vw;
 }
 .icon_3_right{
@@ -914,7 +921,7 @@
 }
 
 .icon_text_container_right_4{
-  top:860vw;
+  top:820vw;
   right:5vw;
 }
 .icon_4_right{
@@ -926,7 +933,7 @@
 }
 
 .icon_text_container_right_5{
-  top:1470vw;
+  top:1395vw;
   right:5vw;
 }
 .icon_5_right{
@@ -938,7 +945,7 @@
 }
 
 .icon_text_container_right_6{
-  top:2950vw;
+  top:2790vw;
   right:5vw;
 }
 .icon_6_right{
@@ -950,7 +957,7 @@
 }
 
 .icon_text_container_right_7{
-  top:3780vw;
+  top:3580vw;
   right:5vw;
 }
 .icon_7_right{
@@ -962,7 +969,7 @@
 }
 
 .icon_text_container_right_8{
-  top:4380vw;
+  top:4140vw;
   right:5vw;
 }
 .icon_8_right{
