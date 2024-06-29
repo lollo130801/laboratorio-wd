@@ -1,14 +1,12 @@
 // Notification.js
 import React from 'react';
 import styles from './App.module.scss';
-import Classnames from 'classnames';
+
 
 const Notification = () => {
     return (
-        <div className="notification-container">
-            <div className="notification-message">
-                <h1>Please rotate your device back to portrait mode.</h1>
-            </div>
+        <div className={styles.notification_div}>
+            <h2 className={styles.notification_text}>Ruota il dispositivo in verticale!</h2>
         </div>
     );
 };
