@@ -10,7 +10,7 @@ const RootComponent = () => {
 
     useEffect(() => {
         const orientationMediaQuery = window.matchMedia("(orientation: portrait)");
-        const mobileMediaQuery = window.matchMedia("(max-width: 1000px)");
+        const mobileMediaQuery = window.matchMedia("(max-width: 768px)");
 
         const handleOrientationChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => {
             setIsPortrait(e.matches);
