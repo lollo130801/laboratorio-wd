@@ -70,6 +70,8 @@ import txtAhmed13Svg from './assets/txtAhmed13.svg';
 import txtAhmed14Svg from './assets/txtAhmed14.svg';
 import nuvolaMattia from './assets/nuvolaMattia.svg';
 import nuvolaAhmed from './assets/nuvolaAhmed.svg';
+import iconZoom from './assets/icon_zoom.gif';
+import appBoard from './_codux/boards/app/app.board';
 
 type InitialPositions = {
     ahmed: number;
@@ -144,6 +146,10 @@ function App() {
     const nuvolaAhmedRef = useRef<HTMLImageElement>(null);
     const nuvolaMattiaRef = useRef<HTMLImageElement>(null);
     const initialPositionsRef = useRef<InitialPositions>({ ahmed: 0, mattia: 0 });
+   
+    const appRef = useRef<HTMLDivElement>(null);
+    const sfondoAvvisoZoom = useRef<HTMLDivElement>(null);
+    const iconZoomImmagine = useRef<HTMLImageElement>(null);
 
     // Add scroll event listener
     useEffect(() => {
@@ -250,23 +256,57 @@ function App() {
         window.addEventListener('scroll', handleScroll);
         handleScroll();
 
+
+
+        const addZoomWarningClasses = () => {
+
+            if (sfondoAvvisoZoom.current && iconZoomImmagine.current) {
+                sfondoAvvisoZoom.current.classList.add(styles.bloccoAvvisoZoom);
+                iconZoomImmagine.current.classList.add(styles.iconZoom);
+                iconZoomImmagine.current.classList.add(styles['scale-in-top']);
+
+                setTimeout(() => {
+                    if (sfondoAvvisoZoom.current && iconZoomImmagine.current) {
+                        sfondoAvvisoZoom.current.classList.remove(styles.bloccoAvvisoZoom);
+                        iconZoomImmagine.current.classList.remove(styles.iconZoom);
+                        if (appRef.current) {
+                            Array.from(appRef.current.childNodes).forEach((childNode) => {
+                                if (childNode === sfondoAvvisoZoom.current || childNode === iconZoomImmagine.current) {
+                                    childNode.remove();
+                                }
+                            });
+                        }
+                    }
+                }, 3000);
+            }
+        };
+
+        // Aggiunge le classi dopo 5 secondi
+        setTimeout(addZoomWarningClasses, 2000);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
     return (
-        <div className={styles.App}>
+        <div ref={appRef} className={Classnames(styles.App)}>
                 <img src={bg1} alt="" className={styles.bg_1} />
                 <img src={bg2} alt="" className={styles.bg_1} />
                 <img src={bg3} alt="" className={styles.bg_1} />
                 <img src={bg4} alt="" className={styles.bg_1} />
                 <img src={bg5} alt="" className={styles.bg_2} />
 
+                
+                <div ref={sfondoAvvisoZoom}></div>
+                <img ref={iconZoomImmagine} src={iconZoom} alt=""/>
+
                 <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)} />
                 <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)} />
                 <img ref={nuvolaAhmedRef} src={nuvolaAhmed} alt="Nuvola Ahmed" className={styles.nuvolaAhmed} />
                 <img ref={nuvolaMattiaRef} src={nuvolaMattia} alt="Nuvola Mattia" className={styles.nuvolaMattia} />
+
+
 
                 <div className={styles.icon_text_container_left_1}>            
                     <img ref={mattia1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_left} />
