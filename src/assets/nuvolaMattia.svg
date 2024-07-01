@@ -1,1 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 327 169"><defs><style>.cls-1{fill:#fff;}.cls-2{font-size:40px;fill:#643a2a;font-family:JosefinSansRoman-Bold, Josefin Sans;font-weight:700;}.cls-3{letter-spacing:-0.06em;}</style></defs><g id="Livello_2" data-name="Livello 2"><g id="illustrazioni"><path class="cls-1" d="M327,103c0,32.58-45.44,59-101.5,59-20.34,0-39.29-3.48-55.17-9.46C152.91,162.72,128.94,169,102.5,169,49.2,169,6,143.48,6,112c0-12.58,6.9-24.21,18.59-33.63C9.73,70.61,0,57.66,0,43,0,19.25,25.52,0,57,0c23.82,0,44.23,11,52.75,26.68C120.06,19.47,134.29,15,150,15c26.64,0,49,12.83,55.27,30.17A173.11,173.11,0,0,1,225.5,44C281.56,44,327,70.42,327,103Z"/><text class="cls-2" transform="translate(91.36 114.94)">M<tspan class="cls-3" x="37.92" y="0">A</tspan><tspan x="63.36" y="0">TTIA</tspan></text></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 327 169" style="enable-background:new 0 0 327 169;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{enable-background:new    ;}
+	.st2{fill:#643A2A;}
+</style>
+<g id="Livello_2_00000139991058285158962980000012188788542354411449_">
+	<g id="illustrazioni">
+		<path class="st0" d="M327,103c0,32.6-45.4,59-101.5,59c-20.3,0-39.3-3.5-55.2-9.5c-17.4,10.2-41.4,16.5-67.8,16.5
+			C49.2,169,6,143.5,6,112c0-12.6,6.9-24.2,18.6-33.6C9.7,70.6,0,57.7,0,43C0,19.2,25.5,0,57,0c23.8,0,44.2,11,52.8,26.7
+			C120.1,19.5,134.3,15,150,15c26.6,0,49,12.8,55.3,30.2c6.7-0.8,13.5-1.2,20.2-1.2C281.6,44,327,70.4,327,103z"/>
+		<g>
+			<g class="st1">
+				<path class="st2" d="M95.2,114.9V84.3h0l16.4,23.2l-2.5-0.6l16.3-22.6h0.1v30.6h-5.8V97.4l0.4,3l-10,14.2H110l-10.2-14.2l1-2.8
+					v17.3H95.2z"/>
+			</g>
+		</g>
+		<g>
+			<g class="st1">
+				<path class="st2" d="M129.8,114.9L143,84.3h0.3l13.3,30.6h-6.7l-8.5-21.5l4.2-2.9l-10.2,24.4H129.8z M138.8,104.3h8.8l2,4.9H137
+					L138.8,104.3z"/>
+			</g>
+		</g>
+		<g>
+			<g class="st1">
+				<path class="st2" d="M156.5,85.5h19.8v5.6h-7.2v23.8h-5.8V91.1h-6.9V85.5z"/>
+				<path class="st2" d="M180,85.5h19.8v5.6h-7.2v23.8h-5.8V91.1H180V85.5z"/>
+				<path class="st2" d="M205.4,85.5h5.8v29.4h-5.8V85.5z"/>
+				<path class="st2" d="M215.5,114.9l13.3-30.6h0.3l13.3,30.6h-6.7l-8.5-21.5l4.2-2.9l-10.2,24.4H215.5z M224.6,104.3h8.8l2,4.9
+					h-12.7L224.6,104.3z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
