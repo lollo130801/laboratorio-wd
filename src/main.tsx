@@ -31,7 +31,7 @@ const RootComponent = () => {
 
     return (
         <React.StrictMode>
-            {isMobile && !isPortrait ? <Notification /> : <App />}
+            <App />
         </React.StrictMode>
     );
 };
