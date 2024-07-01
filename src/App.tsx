@@ -183,7 +183,7 @@ function App() {
 
                 if (scrollY > initialAhmedPosition - buffer) {
                     nuvolaAhmedRef.current.style.position = 'fixed';
-                    nuvolaAhmedRef.current.style.top = '0vh';
+                    nuvolaAhmedRef.current.style.top = '0vw';
                 } else {
                     nuvolaAhmedRef.current.style.position = 'absolute';
                     nuvolaAhmedRef.current.style.top = `${initialAhmedPosition}px`;
@@ -200,7 +200,7 @@ function App() {
 
                 if (scrollY > initialMattiaPosition - buffer) {
                     nuvolaMattiaRef.current.style.position = 'fixed';
-                    nuvolaMattiaRef.current.style.top = '0vh';
+                    nuvolaMattiaRef.current.style.top = '0vw';
                 } else {
                     nuvolaMattiaRef.current.style.position = 'absolute';
                     nuvolaMattiaRef.current.style.top = `${initialMattiaPosition}px`;
@@ -259,26 +259,29 @@ function App() {
 
 
         const addZoomWarningClasses = () => {
-
+        
             if (sfondoAvvisoZoom.current && iconZoomImmagine.current) {
                 sfondoAvvisoZoom.current.classList.add(styles.bloccoAvvisoZoom);
                 iconZoomImmagine.current.classList.add(styles.iconZoom);
                 iconZoomImmagine.current.classList.add(styles['scale-in-top']);
-
+        
                 setTimeout(() => {
                     if (sfondoAvvisoZoom.current && iconZoomImmagine.current) {
                         sfondoAvvisoZoom.current.classList.remove(styles.bloccoAvvisoZoom);
-                        iconZoomImmagine.current.classList.remove(styles.iconZoom);
                         if (appRef.current) {
                             Array.from(appRef.current.childNodes).forEach((childNode) => {
                                 if (childNode === sfondoAvvisoZoom.current || childNode === iconZoomImmagine.current) {
                                     childNode.remove();
+        
                                 }
                             });
                         }
                     }
                 }, 3000);
             }
+            
+            
+        
         };
 
         // Aggiunge le classi dopo 5 secondi
