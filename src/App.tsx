@@ -285,7 +285,7 @@ function App() {
         };
 
         // Aggiunge le classi dopo 5 secondi
-        setTimeout(addZoomWarningClasses, 2000);
+        setTimeout(addZoomWarningClasses, 1000);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
