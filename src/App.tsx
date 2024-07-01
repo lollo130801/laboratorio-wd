@@ -294,15 +294,15 @@ function App() {
 
     return (
         <div ref={appRef} className={Classnames(styles.App)}>
-                <img src={bg1} alt="" className={styles.bg_1} />
-                <img src={bg2} alt="" className={styles.bg_1} />
-                <img src={bg3} alt="" className={styles.bg_1} />
-                <img src={bg4} alt="" className={styles.bg_1} />
-                <img src={bg5} alt="" className={styles.bg_2} />
+                <img src={bg1} alt="Primo background" className={styles.bg_1} />
+                <img src={bg2} alt="Secondo background" className={styles.bg_1} />
+                <img src={bg3} alt="Terzo background" className={styles.bg_1} />
+                <img src={bg4} alt="Quarto background" className={styles.bg_1} />
+                <img src={bg5} alt="Quinto background" className={styles.bg_2} />
 
                 
                 <div ref={sfondoAvvisoZoom}></div>
-                <img ref={iconZoomImmagine} src={iconZoom} alt=""/>
+                <img ref={iconZoomImmagine} src={iconZoom} alt="Animazione dita che fanno zoom-in"/>
 
                 <img src={nuvoleTitolo} alt="Vite Parallele" className={Classnames(styles.nuvoleTitolo, styles.AnimazioneNuvole)} />
                 <img src={titolo} alt="Nuvole Sfondo titolo" className={Classnames(styles.titolo, styles.AnimazioneTitolo)} />
@@ -312,153 +312,271 @@ function App() {
 
 
                 <div className={styles.icon_text_container_left_1}>            
-                    <img ref={mattia1Ref} src={Mattia1Svg0} alt="" className={styles.icon_1_left} />
-                    <img ref={mattiatext1Ref} src={txtMattia1Svg} alt="" className={styles.text_1_left} />
+                    <img ref={mattia1Ref} src={Mattia1Svg0} alt="Mattia mano nella mano con i suoi genitori" className={styles.icon_1_left} />
+                    <img ref={mattiatext1Ref} src={txtMattia1Svg} alt="Descrizione che accompagna l'immagine precedente: Mattia cresce a Milano in una famiglia
+                                                                    benestante e serena. Suo padre è un
+                                                                    avvocato di successo, sua madre una
+                                                                    stimata professoressa universitaria.
+                                                                    I suoi genitori non gli fanno mai mancare
+                                                                    niente, viziandolo ogni tanto." className={styles.text_1_left} />
                 </div>
                 
                 <div className={styles.icon_text_container_left_2}>              
-                <img ref={mattia2Ref} src={Mattia2Svg0} alt="" className={styles.icon_2_left} />
-                <img ref={mattiatext2Ref} src={txtMattia2Svg} alt="" className={styles.text_2_left} />
+                <img ref={mattia2Ref} src={Mattia2Svg0} alt="Mattia che studia un libro di scienza" className={styles.icon_2_left} />
+                <img ref={mattiatext2Ref} src={txtMattia2Svg} alt="Descrizione che accompagna l'immagine precedente: Mattia frequenta una delle migliori scuole
+                                                                    private di Milano, ricevendo un'ottima
+                                                                    educazione e partecipando a tante attività
+                                                                    extra-curriculari.
+                                                                    Ama molto la scienza e sogna di diventare
+                                                                    medico." className={styles.text_2_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_3}>
-                <img ref={mattia3Ref} src={Mattia3Svg0} alt="" className={styles.icon_3_left} />
-                <img ref={mattiatext3Ref} src={txtMattia3Svg} alt="" className={styles.text_3_left} />
+                <img ref={mattia3Ref} src={Mattia3Svg0} alt="Mattia mentre gioca a calcio" className={styles.icon_3_left} />
+                <img ref={mattiatext3Ref} src={txtMattia3Svg} alt="Descrizione che accompagna l'immagine precedente: Ora in quarta elementare, Mattia è bravissimo
+                                                                    in tutte le materie e ha pochi problemi a
+                                                                    scuola. I suoi genitori sono molto orgogliosi e
+                                                                    grazie al loro supporto, può giocare a calcio,
+                                                                    sport che ama tantissimo." className={styles.text_3_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_4}>
-                <img ref={mattia4Ref} src={Mattia4Svg0} alt="" className={styles.icon_4_left} />
-                <img ref={mattiatext4Ref} src={txtMattia4Svg} alt="" className={styles.text_4_left} />
+                <img ref={mattia4Ref} src={Mattia4Svg0} alt="Mattia al parco con i suoi genitori e gioca felicemente con altri bambini" className={styles.icon_4_left} />
+                <img ref={mattiatext4Ref} src={txtMattia4Svg} alt="Descrizione che accompagna l'immagine precedente: Mattia è amico di tutti in classe e li vede
+                                                                    spesso anche fuori scuola.
+                                                                    Si diverte spesso al parco e alle feste di
+                                                                    compleanno, dove anche i genitori si
+                                                                    riuniscono." className={styles.text_4_left} />
                 </div>
                 
                 <div className={styles.icon_text_container_left_5}>
-                <img ref={mattia5Ref} src={Mattia5Svg0} alt="" className={styles.icon_5_left} />
-                <img ref={mattiatext5Ref} src={txtMattia5Svg} alt="" className={styles.text_5_left} />
+                <img ref={mattia5Ref} src={Mattia5Svg0} alt="Mattia viene aiutato dai suoi genitori coi compiti" className={styles.icon_5_left} />
+                <img ref={mattiatext5Ref} src={txtMattia5Svg} alt="Descrizione che accompagna l'immagine precedente: I suoi genitori sono sempre presenti,
+                                                                    aiutandolo coi compiti. Mattia vive la sua
+                                                                    esperienza scolastica con serenità, perché
+                                                                    anche davanti alle difficoltà è consapevole di
+                                                                    avere il supporto dei genitori." className={styles.text_5_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_6}>
-                <img ref={mattia6Ref} src={Mattia6Svg0} alt="" className={styles.icon_6_left} />
-                <img ref={mattiatext6Ref} src={txtMattia6Svg} alt="" className={styles.text_6_left} />
+                <img ref={mattia6Ref} src={Mattia6Svg0} alt="Mattia fa amicizia con altri bambini" className={styles.icon_6_left} />
+                <img ref={mattiatext6Ref} src={txtMattia6Svg} alt="Descrizione che accompagna l'immagine precedente: Il passaggio dalle elementari alle medie è
+                                                                    stato semplice per Mattia.
+                                                                    In questo periodo esplora le materie
+                                                                    scientifiche e stringe tante amicizie." className={styles.text_6_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_7}>
-                <img ref={mattia7Ref} src={Mattia7Svg0} alt="" className={styles.icon_7_left} />
-                <img ref={mattiatext7Ref} src={txtMattia7Svg} alt="" className={styles.text_7_left} />
+                <img ref={mattia7Ref} src={Mattia7Svg0} alt="Mattia riceve un ottimo voto" className={styles.icon_7_left} />
+                <img ref={mattiatext7Ref} src={txtMattia7Svg} alt="Descrizione che accompagna l'immagine precedente: In terza media, Mattia visita diversi open day
+                                                                    ed è sicuro di volersi iscrivere al liceo
+                                                                    scientifico. Affronta l'esame di stato con
+                                                                    impegno, ottenendo un ottimo voto che lo
+                                                                    rende fiero dei suoi risultati e pronto per
+                                                                    iniziare il liceo." className={styles.text_7_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_8}>
-                <img ref={mattia8Ref} src={Mattia8Svg0} alt="" className={styles.icon_8_left} />
-                <img ref={mattiatext8Ref} src={txtMattia8Svg} alt="" className={styles.text_8_left} />
+                <img ref={mattia8Ref} src={Mattia8Svg0} alt="Mattia è triste perchè ha difficoltà ad ambientarsi al liceo" className={styles.icon_8_left} />
+                <img ref={mattiatext8Ref} src={txtMattia8Svg} alt="Descrizione che accompagna l'immagine precedente: Mattia inizia il liceo e ha qualche difficoltà a
+                                                                    socializzare con i compagni e ad ambientarsi,
+                                                                    soprattutto perché gli insegnanti chiedono
+                                                                    tanto impegno a tutti gli studenti." className={styles.text_8_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_9}>
-                <img ref={mattia9Ref} src={Mattia9Svg0} alt="" className={styles.icon_9_left} />
-                <img ref={mattiatext9Ref} src={txtMattia9Svg} alt="" className={styles.text_9_left} />
+                <img ref={mattia9Ref} src={Mattia9Svg0} alt="Mattia gioca a bowling con amici" className={styles.icon_9_left} />
+                <img ref={mattiatext9Ref} src={txtMattia9Svg} alt="Descrizione che accompagna l'immagine precedente: In poco tempo stringe una grande amicizia
+                                                                    con alcuni compagni di classe e li frequenta
+                                                                    anche fuori dalla scuola, riuscendo a gestire
+                                                                    bene il tempo tra amicizie e studio." className={styles.text_9_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_10}>
-                <img ref={mattia10Ref} src={Mattia10Svg0} alt="" className={styles.icon_10_left} />
-                <img ref={mattiatext10Ref} src={txtMattia10Svg} alt="" className={styles.text_10_left} />
+                <img ref={mattia10Ref} src={Mattia10Svg0} alt="Mattia e i suoi premi di studio vinti a scuola" className={styles.icon_10_left} />
+                <img ref={mattiatext10Ref} src={txtMattia10Svg} alt="Descrizione che accompagna l'immagine precedente: Nel terzo anno di Liceo Scientifico, Mattia
+                                                                    comincia a partecipare a varie Olimpiadi
+                                                                    Scientifiche, portandosi a casa premi e
+                                                                    riconoscimenti." className={styles.text_10_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_11}>
-                <img ref={mattia11Ref} src={Mattia11Svg0} alt="" className={styles.icon_11_left} />
-                <img ref={mattiatext11Ref} src={txtMattia11Svg} alt="" className={styles.text_11_left} />
+                <img ref={mattia11Ref} src={Mattia11Svg0} alt="Mattia si prepara per il test di medicina" className={styles.icon_11_left} />
+                <img ref={mattiatext11Ref} src={txtMattia11Svg} alt="Descrizione che accompagna l'immagine precedente: Mattia ha iniziato a prepararsi per il test di
+                                                                    ammissione a Medicina già all'inizio dell'ultimo
+                                                                    anno scolastico, partecipando a corsi extra
+                                                                    pomeridiani per assicurarsi un posto nella sua
+                                                                    università dei sogni." className={styles.text_11_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_12}>
-                <img ref={mattia12Ref} src={Mattia12Svg0} alt="" className={styles.icon_12_left} />
-                <img ref={mattiatext12Ref} src={txtMattia12Svg} alt="" className={styles.text_12_left} />
+                <img ref={mattia12Ref} src={Mattia12Svg0} alt="Mattia in una nuova città" className={styles.icon_12_left} />
+                <img ref={mattiatext12Ref} src={txtMattia12Svg} alt="Descrizione che accompagna l'immagine precedente: L'università è lontana da casa: trova quindi un
+                                                                    appartamento in affitto molto vicino alla
+                                                                    scuola. I suoi genitori lo sostengono
+                                                                    economicamente per tutto il periodo
+                                                                    universitario e non ha bisogno di cercare un
+                                                                    lavoro." className={styles.text_12_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_13}>
-                <img ref={mattia13Ref} src={Mattia13Svg0} alt="" className={styles.icon_13_left} />
-                <img ref={mattiatext13Ref} src={txtMattia13Svg} alt="" className={styles.text_13_left} />
+                <img ref={mattia13Ref} src={Mattia13Svg0} alt="Mattia che inizia ad andare a feste e fare nuove amicizie all'università" className={styles.icon_13_left} />
+                <img ref={mattiatext13Ref} src={txtMattia13Svg} alt="Descrizione che accompagna l'immagine precedente: Al secondo anno di università, amplia il suo
+                                                                    gruppo di amici e durante il tempo libero
+                                                                    partecipa a feste, aperitivi e cene insieme
+                                                                    a loro." className={styles.text_13_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_14}>
-                <img ref={mattia14Ref} src={Mattia14Svg0} alt="" className={styles.icon_14_left} />
-                <img ref={mattiatext14Ref} src={txtMattia14Svg} alt="" className={styles.text_14_left} />
+                <img ref={mattia14Ref} src={Mattia14Svg0} alt="Mattia si laurea in medicina" className={styles.icon_14_left} />
+                <img ref={mattiatext14Ref} src={txtMattia14Svg} alt="Descrizione che accompagna l'immagine precedente: Dopo 6 anni, Mattia si laurea in Medicina in
+                                                                    tempo e decide di specializzarsi in cardiologia,
+                                                                    un campo che lo ha sempre affascinato." className={styles.text_14_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_15}>
-                <img ref={mattia15Ref} src={Mattia15Svg0} alt="" className={styles.icon_15_left} />
-                <img ref={mattiatext15Ref} src={txtMattia15Svg} alt="" className={styles.text_15_left} />
+                <img ref={mattia15Ref} src={Mattia15Svg0} alt="Mattia che partecipa ad una conferenza sul computer" className={styles.icon_15_left} />
+                <img ref={mattiatext15Ref} src={txtMattia15Svg} alt="Descrizione che accompagna l'immagine precedente: Mattia partecipa a conferenze internazionali,
+                                                                    ha pubblicazioni su riviste scientifiche e
+                                                                    contribuisce a ricerche cruciali sulle malattie
+                                                                    cardiache. Affronta le sfide con il supporto
+                                                                    costante della famiglia e accesso a risorse
+                                                                    finanziarie e accademiche." className={styles.text_15_left} />
                 </div>
 
                 <div className={styles.icon_text_container_left_16}>
-                <img ref={mattia16Ref} src={Mattia16Svg0} alt="" className={styles.icon_16_left} />
-                <img ref={mattiatext16Ref} src={txtMattia16Svg} alt="" className={styles.text_16_left} />
+                <img ref={mattia16Ref} src={Mattia16Svg0} alt="Mattia con nello sfondo l'ospedale dove lavora" className={styles.icon_16_left} />
+                <img ref={mattiatext16Ref} src={txtMattia16Svg} alt="Descrizione che accompagna l'immagine precedente: Mattia è diventato un cardiologo di successo
+                                                                    e lavora in un ospedale rinomato.
+                                                                    Partecipa a importanti ricerche sulle malattie
+                                                                    cardiache, pubblica articoli scientifici e tiene
+                                                                    conferenze internazionali, guadagnandosi
+                                                                    grande rispetto nella comunità medica." className={styles.text_16_left} />
                 </div>
                 
                 <div className={styles.icon_text_container_right_1}>
-                <img ref={Ahmed1Ref} src={Ahmed1Svg0} alt="" className={styles.icon_1_right} />
-                <img ref={AhmedText1Ref} src={txtAhmed1Svg} alt="" className={styles.text_1_right} />
+                <img ref={Ahmed1Ref} src={Ahmed1Svg0} alt="Ahmed con i suoi genitori da piccolo in Marocco" className={styles.icon_1_right} />
+                <img ref={AhmedText1Ref} src={txtAhmed1Svg} alt="Descrizione che accompagna l'immagine precedente: Ahmed è nato in una piccola città del
+                                                                    Marocco, in una famiglia modesta. Suo padre
+                                                                    è un agricoltore e sua madre una casalinga.
+                                                                    Nonostante le risorse limitate, la sua famiglia
+                                                                    sacrifica molto cercando di non fargli
+                                                                    mancare nulla." className={styles.text_1_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_2}>
-                <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="" className={styles.icon_2_right} />
-                <img ref={AhmedText2Ref} src={txtAhmed2Svg} alt="" className={styles.text_2_right} />
+                <img ref={Ahmed2Ref} src={Ahmed2Svg0} alt="Ahmed che sogna di essere medico da piccolo" className={styles.icon_2_right} />
+                <img ref={AhmedText2Ref} src={txtAhmed2Svg} alt="Descrizione che accompagna l'immagine precedente: Durante la scuola elementare, Ahmed si
+                                                                    distingue per la sua intelligenza e
+                                                                    determinazione. Fin da piccolo ha un sogno
+                                                                    chiaro: diventare medico." className={styles.text_2_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_3}>
-                <img ref={Ahmed3Ref} src={Ahmed3Svg0} alt="" className={styles.icon_3_right} />
-                <img ref={AhmedText3Ref} src={txtAhmed3Svg} alt="" className={styles.text_3_right} />
+                <img ref={Ahmed3Ref} src={Ahmed3Svg0} alt="Ahmed che si trasferisce in Italia con i suoi genitori" className={styles.icon_3_right} />
+                <img ref={AhmedText3Ref} src={txtAhmed3Svg} alt="Descrizione che accompagna l'immagine precedente: A 9 anni, la famiglia di Ahmed decide di
+                                                                    emigrare dal Marocco per cercare migliori
+                                                                    opportunità.
+                                                                    Purtroppo la burocrazia italiana per
+                                                                    l'immigrazione è spesso scoraggiante." className={styles.text_3_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_4}>
-                <img ref={Ahmed4Ref} src={Ahmed4Svg0} alt="" className={styles.icon_4_right} />
-                <img ref={AhmedText4Ref} src={txtAhmed4Svg} alt="" className={styles.text_4_right} />
+                <img ref={Ahmed4Ref} src={Ahmed4Svg0} alt="Ahmed inizia la scuola ed è il più grande tra i suoi compagni" className={styles.icon_4_right} />
+                <img ref={AhmedText4Ref} src={txtAhmed4Svg} alt="Descrizione che accompagna l'immagine precedente: Ahmed non conosce la lingua italiana, per
+                                                                    questo viene iscritto alla seconda elementare
+                                                                    anziché alla quarta per facilitare il suo
+                                                                    nserimento nel nuovo ambiente." className={styles.text_4_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_5}>
-                <img ref={Ahmed5Ref} src={Ahmed5Svg0} alt="" className={styles.icon_5_right} />
-                <img ref={AhmedText5Ref} src={txtAhmed5Svg} alt="" className={styles.text_5_right} />
+                <img ref={Ahmed5Ref} src={Ahmed5Svg0} alt="Ahmed che ha difficoltà a studiare" className={styles.icon_5_right} />
+                <img ref={AhmedText5Ref} src={txtAhmed5Svg} alt="Descrizione che accompagna l'immagine precedente: I suoi genitori, a causa delle difficoltà con la
+                                                                    lingua e della loro limitata istruzione, non
+                                                                    riescono ad aiutarlo come vorrebbero con i
+                                                                    compiti a casa." className={styles.text_5_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_6}>
-                <img ref={Ahmed6Ref} src={Ahmed6Svg0} alt="" className={styles.icon_6_right} />
-                <img ref={AhmedText6Ref} src={txtAhmed6Svg} alt="" className={styles.text_6_right} />
+                <img ref={Ahmed6Ref} src={Ahmed6Svg0} alt="Ahmed che viene incoraggiato da un suo professore di scienze" className={styles.icon_6_right} />
+                <img ref={AhmedText6Ref} src={txtAhmed6Svg} alt="Descrizione che accompagna l'immagine precedente: Un professore di scienze vede il suo potenziale
+                                                                    e lo incoraggia a riaccendere la passione per
+                                                                    lo studio. Notando il suo interesse per le
+                                                                    materie scientifiche, gli suggerisce di iscriversi
+                                                                    in un buon liceo scientifico della città." className={styles.text_6_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_7}>
-                <img ref={Ahmed7Ref} src={Ahmed7Svg0} alt="" className={styles.icon_7_right} />
-                <img ref={AhmedText7Ref} src={txtAhmed7Svg} alt="" className={styles.text_7_right} />
+                <img ref={Ahmed7Ref} src={Ahmed7Svg0} alt="Ahmed che si sente diverso insieme ai suoi nuovi amici" className={styles.icon_7_right} />
+                <img ref={AhmedText7Ref} src={txtAhmed7Svg} alt="Descrizione che accompagna l'immagine precedente: Nonostante la scuola superiore sia faticosa,
+                                                                    riesce a fare buoni amici in classe e esce
+                                                                    spesso con loro. Però, in vari contesti sociali, si
+                                                                    sente ancora diverso dagli altri." className={styles.text_7_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_8}>
-                <img ref={Ahmed8Ref} src={Ahmed8Svg0} alt="" className={styles.icon_8_right} />
-                <img ref={AhmedText8Ref} src={txtAhmed8Svg} alt="" className={styles.text_8_right} />
+                <img ref={Ahmed8Ref} src={Ahmed8Svg0} alt="Ahmed che inizia a lavorare in un ristorante" className={styles.icon_8_right} />
+                <img ref={AhmedText8Ref} src={txtAhmed8Svg} alt="Descrizione che accompagna l'immagine precedente: Ahmed e i suoi genitori non possono
+                                                                    permettersi di pagare le tasse universitarie,
+                                                                    quindi lavora come cameriere e lavapiatti per
+                                                                    risparmiare e iscriversi all'università." className={styles.text_8_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_9}>
-                <img ref={Ahmed9Ref} src={Ahmed9Svg0} alt="" className={styles.icon_9_right} />
-                <img ref={AhmedText9Ref} src={txtAhmed9Svg} alt="" className={styles.text_9_right} />
+                <img ref={Ahmed9Ref} src={Ahmed9Svg0} alt="Ahmed che ha problemi a rinnovare il suo permesso di soggiorno" className={styles.icon_9_right} />
+                <img ref={AhmedText9Ref} src={txtAhmed9Svg} alt="Descrizione che accompagna l'immagine precedente: Ogni giorno Ahmed combatte con il tempo e
+                                                                    le risorse limitate per rinnovare il
+                                                                    permesso di soggiorno. Le procedure sono
+                                                                    estenuanti, con lunghe file e documentazione
+                                                                    complessa da preparare. Non si lascia
+                                                                    scoraggiare, considerando ogni ostacolo come
+                                                                    una tappa verso il suo obiettivo." className={styles.text_9_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_10}>
-                <img ref={Ahmed10Ref} src={Ahmed10Svg0} alt="" className={styles.icon_10_right} />
-                <img ref={AhmedText10Ref} src={txtAhmed10Svg} alt="" className={styles.text_10_right} />
+                <img ref={Ahmed10Ref} src={Ahmed10Svg0} alt="Ahmed riesce ad superare l'esame di ammissione di medicina" className={styles.icon_10_right} />
+                <img ref={AhmedText10Ref} src={txtAhmed10Svg} alt="Descrizione che accompagna l'immagine precedente: Dopo due anni di sacrifici, Ahmed supera
+                                                                    l'esame di ammissione alla facoltà di medicina.
+                                                                    La sua vita universitaria è molto impegnativa:
+                                                                    oltre agli studi intensivi, lavora part-time per
+                                                                    pagarsi gli studi e le spese di vita." className={styles.text_10_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_11}>
-                <img ref={Ahmed11Ref} src={Ahmed11Svg0} alt="" className={styles.icon_11_right} />
-                <img ref={AhmedText11Ref} src={txtAhmed11Svg} alt="" className={styles.text_11_right} />
+                <img ref={Ahmed11Ref} src={Ahmed11Svg0} alt="Ahmed ha problemi con il suo capo" className={styles.icon_11_right} />
+                <img ref={AhmedText11Ref} src={txtAhmed11Svg} alt="Descrizione che accompagna l'immagine precedente: Lavorando e frequentando l’università in
+                                                                    contemporanea, il suo datore di lavoro è
+                                                                    infastidito perché Ahmed spesso ha bisogno
+                                                                    di assentarsi dal lavoro." className={styles.text_11_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_12}>
-                <img ref={Ahmed12Ref} src={Ahmed12Svg0} alt="" className={styles.icon_12_right} />
-                <img ref={AhmedText12Ref} src={txtAhmed12Svg} alt="" className={styles.text_12_right} />
+                <img ref={Ahmed12Ref} src={Ahmed12Svg0} alt="Ahmed riesce a laurearsi in medicina" className={styles.icon_12_right} />
+                <img ref={AhmedText12Ref} src={txtAhmed12Svg} alt="Descrizione che accompagna l'immagine precedente: Dopo anni di duro lavoro, Ahmed si laurea in
+                                                                    medicina con lode. Decide di specializzarsi in
+                                                                    chirurgia generale, un campo che richiede
+                                                                    dedizione totale.
+                                                                    Affronta una competizione agguerrita per
+                                                                    accedere alla specializzazione, nonostante un
+                                                                    supporto familiare e finanziario minimo." className={styles.text_12_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_13}>
-                <img ref={Ahmed13Ref} src={Ahmed13Svg0} alt="" className={styles.icon_13_right} />
-                <img ref={AhmedText13Ref} src={txtAhmed13Svg} alt="" className={styles.text_13_right} />
+                <img ref={Ahmed13Ref} src={Ahmed13Svg0} alt="Ahmed va a lavorare come medico volontario" className={styles.icon_13_right} />
+                <img ref={AhmedText13Ref} src={txtAhmed13Svg} alt="Descrizione che accompagna l'immagine precedente: Gli capita l'opportunità di andare all'estero
+                                                                    come medico volontario, ma a causa del suo
+                                                                    passaporto marocchino ha più problemi
+                                                                    burocratici degli altri e non può partire." className={styles.text_13_right} />
                 </div>
 
                 <div className={styles.icon_text_container_right_14}>
-                <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="" className={styles.icon_14_right} />
-                <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="" className={styles.text_14_right} />
+                <img ref={Ahmed14Ref} src={Ahmed14Svg0} alt="Ahmed vestito da chirurgo" className={styles.icon_14_right} />
+                <img ref={AhmedText14Ref} src={txtAhmed14Svg} alt="Descrizione che accompagna l'immagine precedente: Finalmente ora anche Ahmed è un chirurgo
+                                                                    rispettato in un ospedale rinomato in Italia.
+                                                                    Ogni giorno, grazie alla sua esperienza
+                                                                    personale, tratta ogni paziente con empatia e
+                                                                    rispetto, ricordando sempre il suo lungo
+                                                                    viaggio." className={styles.text_14_right} />
                 </div>
         </div>
     );
